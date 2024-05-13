@@ -11,6 +11,7 @@ export default withMT({
         primary: '#000419',
         secondary: '#40CFF7',
       },
+      textColor: 'white',
     },
     screens: {
       'md': '768px',

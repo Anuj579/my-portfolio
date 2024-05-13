@@ -91,7 +91,7 @@ function Header() {
           {/* Navigation Links */}
           <div className="hidden md:block text-lg">
             <ul >
-              <div className="flex gap-8 lg-link text-white font-medium text-[20px transition-all">
+              <div className="flex gap-8 lg-link font-medium text-[20px transition-all">
                 <li><Link to="/" className="py-2 "><i className="fa-solid fa-house me-1 relative bottom-[1px]"></i> <span>Home</span></Link></li>
                 <li><Link to="/about" className="py-2  "><i className="fa-solid fa-user me-1 relative bottom-[1px]"></i> <span>About</span></Link></li>
                 <li><Link to="/portfolio" className="py-2 "><i className="fa-solid fa-briefcase me-1"></i> <span>Portfolio</span></Link></li>
@@ -127,7 +127,7 @@ function Header() {
                 </svg>
               </IconButton>
             </div>
-            <div className="px-2 text-white font-medium text-[18px]">
+            <div className="px-2 font-medium text-[18px]">
               <li className="list-none"><Link to="/" onClick={closeDrawer} className="block py-4"><i className="fa-solid fa-house text-[20px] me-3"></i> Home</Link></li>
               <li className="list-none"><Link to="/about" className="block py-4"><i className="fa-solid fa-user text-[20px] me-4"></i> About</Link></li>
               <li className="list-none"><Link to="/portfolio" className="block py-4"><i className="fa-solid fa-briefcase text-[20px] me-3"></i> Portfolio</Link></li>
