@@ -108,7 +108,7 @@ function Header() {
           <Drawer open={open} onClose={closeDrawer} className="p-4">
             <div className="mb-6 flex items-center justify-between ">
               <Link to="/" className="text-black  px-2 tracking-[-1px] italic  rounded-sm font-extrabold font-josefin-sans  text-[24px]">
-                <img src="../src/assets/logo.png" className="h-10 rounded-sm skew-x-[-12deg]" alt="" />
+                <img src={logo} className="h-10 rounded-sm skew-x-[-12deg]" alt="" />
               </Link>
               <IconButton variant="text" className="text-secondary" onClick={closeDrawer}>
                 <svg
