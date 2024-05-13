@@ -72,15 +72,15 @@ function Header() {
     <>
       <nav className={`p-4 z-10 fixed top-0 w-full ${scrolledNavbar && 'backdrop-blur-lg bg-[#000000a9]'} transition-all`}>
         <div className="md:container mx-auto w-full flex justify-between md:justify-between items-center ">
-          {/* Logo/Brand */}
-          <Link to="/" className="text-black px-2 tracking-[-1px] italic skew-x-[-12deg] rounded-sm font-extrabold font-josefin-sans text-[24px]">
+          {/* Logo */}
+          <Link to="/" className="px-2 skew-x-[-12deg]">
             <img src={logo} className="h-11 rounded-sm" alt="" />
           </Link>
 
           {/* Menu Button (for smaller screens) */}
           <button
             id="menu-toggle"
-            className="text-[#40CFF7]  focus:outline-none md:hidden"
+            className="text-[#40CFF7] focus:outline-none md:hidden"
             onClick={openDrawer}
           >
             {open ? "" : <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
@@ -91,7 +91,7 @@ function Header() {
           {/* Navigation Links */}
           <div className="hidden md:block text-lg">
             <ul >
-              <div className="flex gap-8 lg-link text-white font-josefin-sans font-medium text-[20px transition-all">
+              <div className="flex gap-8 lg-link text-white font-medium text-[20px transition-all">
                 <li><Link to="/" className="py-2 "><i className="fa-solid fa-house me-1 relative bottom-[1px]"></i> <span>Home</span></Link></li>
                 <li><Link to="/about" className="py-2  "><i className="fa-solid fa-user me-1 relative bottom-[1px]"></i> <span>About</span></Link></li>
                 <li><Link to="/portfolio" className="py-2 "><i className="fa-solid fa-briefcase me-1"></i> <span>Portfolio</span></Link></li>
@@ -107,7 +107,7 @@ function Header() {
         <ThemeProvider value={theme}>
           <Drawer open={open} onClose={closeDrawer} className="p-4">
             <div className="mb-6 flex items-center justify-between ">
-              <Link to="/" className="text-black  px-2 tracking-[-1px] italic  rounded-sm font-extrabold font-josefin-sans  text-[24px]">
+              <Link to="/" className="px-2 ">
                 <img src={logo} className="h-10 rounded-sm skew-x-[-12deg]" alt="" />
               </Link>
               <IconButton variant="text" className="text-secondary" onClick={closeDrawer}>
@@ -127,7 +127,7 @@ function Header() {
                 </svg>
               </IconButton>
             </div>
-            <div className="px-2 text-white font-josefin-sans font-medium text-[18px]">
+            <div className="px-2 text-white font-medium text-[18px]">
               <li className="list-none"><Link to="/" onClick={closeDrawer} className="block py-4"><i className="fa-solid fa-house text-[20px] me-3"></i> Home</Link></li>
               <li className="list-none"><Link to="/about" className="block py-4"><i className="fa-solid fa-user text-[20px] me-4"></i> About</Link></li>
               <li className="list-none"><Link to="/portfolio" className="block py-4"><i className="fa-solid fa-briefcase text-[20px] me-3"></i> Portfolio</Link></li>
@@ -139,7 +139,7 @@ function Header() {
                 <Link><li className='border-2 rounded-full hover:scale-110 hover:border-secondary transition-all duration-500'><svg xmlns="http://www.w3.org/2000/svg" className='w-[34px] h-[34px] p-2' fill='white' viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" /></svg></li></Link>
                 <Link><li className='border-2 rounded-full hover:scale-110 hover:border-secondary transition-all duration-500'><svg xmlns="http://www.w3.org/2000/svg" className='w-[34px] h-[34px] p-2' fill='white' viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg></li></Link>
               </ul>
-              <Button className="mx-3 bg-secondary ml-0 font-bold text-primary font-josefin-sans">Get in touch</Button>
+              <Button className="mx-3 bg-secondary ml-0 font-bold text-primary">Get in touch</Button>
             </div>
           </Drawer>
         </ThemeProvider>

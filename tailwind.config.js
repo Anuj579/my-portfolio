@@ -19,7 +19,7 @@ export default withMT({
       'max-sm': { 'max': '767px' },
     },
     fontFamily:{
-      'josefin-sans': ["Josefin Sans", "sans-serif"],
+      sans: ["Josefin Sans", "sans-serif"],
       'josefin-slab': ["Josefin Slab", "serif"]
     }
   },
