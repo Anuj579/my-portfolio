@@ -22,7 +22,7 @@ export default function App() {
       <Loader load={isLoading} />
       <div className={`${isLoading ? 'opacity-0 overflow-hidden max-h-screen' : 'opacity-100'} min-h-screen flex flex-col transition-opacity duration-1000 text-white bg-primary bg-gradient-to-tl from-primary via-[#65afda2d] to-primary`}>
         <Header />
-        <Outlet />
+        <Outlet isLoading={isLoading} />
         <Footer />
       </div>
     </>

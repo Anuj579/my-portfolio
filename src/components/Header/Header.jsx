@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 import { ThemeProvider } from "@material-tailwind/react";
 import logo from '../../assets/logo.png'
+import drawerBg from '../../assets/drawer-bg.jpg'
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -52,7 +53,7 @@ function Header() {
             boxShadow: "shadow-2xl shadow-blue-gray-900/10",
           },
           overlay: {
-            position: "absolute",
+            position: "fixed",
             inset: "inset-0",
             width: "w-full",
             height: "h-screen",
@@ -80,12 +81,12 @@ function Header() {
           {/* Menu Button (for smaller screens) */}
           <button
             id="menu-toggle"
-            className="text-[#40CFF7] focus:outline-none md:hidden"
+            className={`text-secondary focus:outline-none md:hidden ${open ? "hidden":"block"}`}
             onClick={openDrawer}
           >
-            {open ? "" : <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
+            <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>}
+            </svg>
           </button>
 
           {/* Navigation Links */}
@@ -103,6 +104,7 @@ function Header() {
       </nav>
 
       {/* Drawer for smaller screens */}
+      <link rel="preload" as="image" href={drawerBg} />
       <div className="md:hidden">
         <ThemeProvider value={theme}>
           <Drawer open={open} onClose={closeDrawer} className="p-4">
