@@ -8,7 +8,7 @@ function Footer() {
       <div className="container mx-auto flex flex-wrap items-center gap-y-6 gap-x-12 text-center justify-between">
         <div className='text-left'>
           <Link to="#" className="px-2">
-            <img src={logo} className="h-10 skew-x-[-12deg]" alt="" />
+            <img src={logo} className="h-11" alt="" />
           </Link>
           <p className='mt-[-8px] text-gray-300'>Transforming ideas into reality.</p>
         </div>

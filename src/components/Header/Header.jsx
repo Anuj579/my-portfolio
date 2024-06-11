@@ -7,7 +7,6 @@ import {
 } from "@material-tailwind/react";
 import { ThemeProvider } from "@material-tailwind/react";
 import logo from '../../assets/logo.png'
-import drawerBg from '../../assets/drawer-bg.jpg'
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -74,14 +73,14 @@ function Header() {
       <nav className={`p-4 z-10 fixed top-0 w-full ${scrolledNavbar && 'backdrop-blur-lg bg-[#000000a9]'} transition-all`}>
         <div className="md:container mx-auto w-full flex justify-between md:justify-between items-center ">
           {/* Logo */}
-          <Link to="/" className="px-2 skew-x-[-12deg]">
-            <img src={logo} className="h-11 rounded-sm" alt="" />
+          <Link to="/" className="px-2">
+            <img src={logo} className="h-11" alt="" />
           </Link>
 
           {/* Menu Button (for smaller screens) */}
           <button
             id="menu-toggle"
-            className={`text-secondary focus:outline-none md:hidden ${open ? "hidden":"block"}`}
+            className={`text-white focus:outline-none md:hidden ${open ? "hidden":"block"}`}
             onClick={openDrawer}
           >
             <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
@@ -104,15 +103,14 @@ function Header() {
       </nav>
 
       {/* Drawer for smaller screens */}
-      <link rel="preload" as="image" href={drawerBg} />
       <div className="md:hidden">
         <ThemeProvider value={theme}>
           <Drawer open={open} onClose={closeDrawer} className="p-4">
             <div className="mb-6 flex items-center justify-between ">
               <Link to="/" className="px-2 ">
-                <img src={logo} className="h-10 rounded-sm skew-x-[-12deg]" alt="" />
+                <img src={logo} className="h-11" alt="" />
               </Link>
-              <IconButton variant="text" className="text-secondary" onClick={closeDrawer}>
+              <IconButton variant="text" className="text-white" onClick={closeDrawer}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

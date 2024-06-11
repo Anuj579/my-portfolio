@@ -14,6 +14,7 @@ export default withMT({
       textColor: 'white',
     },
     screens: {
+      'sm': { 'max': '320px' },
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
