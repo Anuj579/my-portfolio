@@ -1,0 +1,30 @@
+.home-hero-section {
+    background: linear-gradient(270deg, #000419e3, #000207f3), url(../../assets/home-bg-img.jpg);
+    background-size: cover;
+    background-position: 20%;
+    background-repeat: no-repeat;
+  }
+  
+  @media screen and (max-width:767px) {
+    .home-hero-section {
+      background: linear-gradient(270deg, #000419e3, #000207f3), url(../../assets/home-sm-bg-img.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  #name-underline {
+    stroke-dasharray: 428;
+    animation: .8s fillSvg ease-in;
+  }
+  
+  @keyframes fillSvg {
+    0% {
+      stroke-dashoffset: 428;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }

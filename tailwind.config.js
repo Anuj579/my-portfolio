@@ -8,10 +8,15 @@ export default withMT({
   theme: {
     extend: {
       colors: {
-        primary: '#000419',
+        primary: '#020411',
         secondary: '#40CFF7',
+        accent: '#D6F5FF'
       },
       textColor: 'white',
+      boxShadow: {
+        'btn-glow': '0 0 5px #40CFF7, 0 0 25px #40CFF7',
+        'custom-card': '3px 3px 0 0 #ffffff',
+      },
     },
     screens: {
       'sm': { 'max': '320px' },

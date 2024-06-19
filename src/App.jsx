@@ -8,21 +8,22 @@ import { Outlet } from 'react-router-dom'
 export default function App() {
 
   // Creating state for loader
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsLoading(false)
-    }, 1500);
-    return () => clearTimeout(timeout)
-  }, [])
+  // useEffect(() => {
+  //   const timeout = setTimeout(() => {
+  //     setIsLoading(false)
+  //   }, 1500);
+  //   return () => clearTimeout(timeout)
+  // }, [])
 
   return (
     <>
-      <Loader load={isLoading} />
-      <div className={`${isLoading ? 'opacity-0 overflow-hidden max-h-screen' : 'opacity-100'} min-h-screen flex flex-col transition-opacity duration-1000 text-white bg-primary bg-gradient-to-tl from-primary via-[#65afda2d] to-primary`}>
+      {/* <Loader load={isLoading} /> */}
+      <div className={`${isLoading ? 'opacity-0 overflow-hidden max-h-screen' : 'opacity-100'} min-h-screen flex flex-col transition-opacity duration-1000 text-white`}>
         <Header />
         <Outlet isLoading={isLoading} />
+        <hr className="border-[#ffffff3d] mb-5" />
         <Footer />
       </div>
     </>
