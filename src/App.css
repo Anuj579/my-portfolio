@@ -9,7 +9,7 @@
 /* Styling loader*/
 
 .loader {
-  --load-time: 1.5s;
+  --load-time: 1.3s;
   outline: 1px solid var(--secondary);
   outline-offset: 1px;
   position: relative;

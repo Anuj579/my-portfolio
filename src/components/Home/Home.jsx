@@ -45,7 +45,7 @@ function Home({ isLoading }) {
         <div className='container flex flex-wrap md:flex-nowrap justify-between items-center mx-auto my-10 px-4'>
           <div className='relative'>
             <h1 className='text-[40px] font-josefin-slab font-black'>Hello World! <br /> I'm <span className='text-secondary relative sm:whitespace-normal whitespace-nowrap'><svg aria-hidden="true" id="name-underline" viewBox="0 0 297 33" className={`absolute left-0 top-2/3 h-[0.58em] w-full fill-transparent sm:opacity-0  ${waitingTime ? "block" : "hidden"} stroke-[#9ceaff9d] stroke-[3.5]`} preserveAspectRatio="none"><path d="M0.999989 20.5C79.5 4.5 85.5 5.5 85.5 5.5C354.5 -9.50001 -56.5262 35.0001 216.5 22.8813C235.5 22.0379 266.931 23.7779 296.5 31" /></svg> <span>Anuj Chaudhary</span></span> </h1>
-            <h2 className='text-3xl font-semibold font-josefin-slab my-10'><span className='font-body'>~</span> Web Developer</h2>
+            <h2 className='text-3xl font-bold font-josefin-slab my-10'>Web Developer</h2>
             <p className='hover:text-secondary fill-white w-max hover:fill-secondary md:mt-20 transition-all duration-300'>
               <Link to={'/about'} className='learn-more-link flex items-center relative font-medium text-lg'><span>Explore my portofolio</span> <svg xmlns="http://www.w3.org/2000/svg" className='h-5 fill-inherit ms-3' viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" /></svg></Link>
             </p>
@@ -58,11 +58,11 @@ function Home({ isLoading }) {
       <section className='container px-4 mx-auto'>
 
         {/* Get To know me div */}
-        <div>
+        <div className='mt-20'>
           <h1 className='font-josefin-slab font-extrabold text-4xl text-center mx-16 my-10'>Get To <span className='text-secondary underline sm:whitespace-normal whitespace-nowrap'>Know Me</span></h1>
           <div className='flex flex-col md:flex-row  gap-16 items-center'>
             <div>
-              <p className='text-accent'>My journey into the <span className='text-secondary'>world of programming</span> has been a thrilling ride of continuous learning and discovery. I have honed my skills in HTML, CSS, JavaScript, and Python, and I am actively expanding my knowledge in frameworks like React JS and Django.</p><br />
+              <p className='text-accent'>My journey into the world of programming has been a thrilling ride of continuous learning and discovery. I have honed my skills in HTML, CSS, JavaScript, and Python, and I am actively expanding my knowledge in frameworks like React JS and Django.</p><br />
               <p className='text-accent'>I love building dynamic and responsive web applications that provide seamless user experiences. From front-end design to back-end logic, I enjoy the challenge of creating efficient and elegant solutions.</p><br />
               <p className='text-accent'>My interests also include exploring new technologies and frameworks, always aiming to expand my expertise and keep up with the latest trends in web development. Whether it's creating interactive user interfaces or developing robust back-end systems, I am passionate about bringing ideas to life through code.</p>
             </div>
@@ -133,7 +133,7 @@ function Home({ isLoading }) {
         </div>
 
         {/* Highlighted creations div */}
-        <div>
+        <div className='mt-20'>
           <h1 className='font-josefin-slab font-extrabold text-4xl text-center mx-10 my-10'>Highlighted <span className='text-secondary underline'>Creations</span></h1>
           <p className='text-accent md:text-center mb-6'>Explore my top projects, crafted with passion and creativity, just for you.</p>
           <div className='md:hidden my-10'>
