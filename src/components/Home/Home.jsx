@@ -55,8 +55,8 @@ function Home({ isLoading }) {
           </div>
         </div>
       </section>
+      
       <section className='container px-4 mx-auto'>
-
         {/* Get To know me div */}
         <div className='mt-20'>
           <h1 className='font-josefin-slab font-extrabold text-4xl text-center mx-16 my-10'>Get To <span className='text-secondary underline sm:whitespace-normal whitespace-nowrap'>Know Me</span></h1>
