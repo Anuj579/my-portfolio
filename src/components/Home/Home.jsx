@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Home.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCards, EffectCreative, Pagination, Navigation } from 'swiper/modules';
+import { EffectCards, EffectCreative, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import 'swiper/css/effect-creative';

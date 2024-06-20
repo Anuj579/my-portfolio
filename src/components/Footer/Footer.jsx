@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 
 function Footer() {
   return (
-    <footer className="mt-auto p-4">
+    <footer className="mt-auto p-4 border-t border-[#ffffff3d]">
       <div className="container mx-auto flex flex-wrap items-end gap-y-6 gap-x-12 text-center justify-between">
         <div className='text-left'>
           <Link to="#" className=''>

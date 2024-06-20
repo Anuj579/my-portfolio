@@ -73,7 +73,7 @@ function Header() {
 
   return (
     <>
-      <nav className={`p-4 z-10 fixed top-0 w-full ${scrolledNavbar && 'backdrop-blur-lg bg-[#000000a9]'} transition-all z-20`}>
+      <nav className={`p-4 z-10 fixed top-0 w-full ${scrolledNavbar && 'backdrop-blur-lg bg-[#000000a9]'} transition-all duration-300 z-20`}>
         <div className="md:container mx-auto w-full flex justify-between md:justify-between items-center ">
           {/* Logo */}
           <Link to="/">
@@ -132,9 +132,9 @@ function Header() {
             </div>
             <div className="font-medium text-[18px]">
               <li className="list-none"><Link to="/" onClick={closeDrawer} className="block py-4"><i className="fa-solid fa-house text-[20px] me-3"></i> Home</Link></li>
-              <li className="list-none"><Link to="/about" className="block py-4"><i className="fa-solid fa-user text-[20px] me-4"></i> About</Link></li>
-              <li className="list-none"><Link to="/portfolio" className="block py-4"><i className="fa-solid fa-briefcase text-[20px] me-3"></i> Portfolio</Link></li>
-              <li className="list-none"><Link to="/contact" className="block py-4"><i className="fa-solid fa-envelope text-[20px] me-3"></i> Contact</Link></li>
+              <li className="list-none"><Link to="/about" onClick={closeDrawer} className="block py-4"><i className="fa-solid fa-user text-[20px] me-4"></i> About</Link></li>
+              <li className="list-none"><Link to="/portfolio" onClick={closeDrawer} className="block py-4"><i className="fa-solid fa-briefcase text-[20px] me-3"></i> Portfolio</Link></li>
+              <li className="list-none"><Link to="/contact" onClick={closeDrawer} className="block py-4"><i className="fa-solid fa-envelope text-[20px] me-3"></i> Contact</Link></li>
             </div>
             <div className=" mt-auto mb-4">
               <ul className="flex flex-wrap  items-center mb-4 pb-4 gap-x-3 border-b border-[#ffffff3d]">
