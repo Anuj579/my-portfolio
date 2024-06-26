@@ -9,12 +9,13 @@ export default withMT({
     extend: {
       colors: {
         primary: '#020411',
-        secondary: '#40CFF7',
+        secondary: '#44ADF8',
         accent: '#D6F5FF'
       },
       textColor: 'white',
       boxShadow: {
-        'btn-glow': '0 0 5px #40CFF7, 0 0 25px #40CFF7',
+        'btn-glow': '0 0 5px #44ADF8, 0 0 25px #44ADF8',
+        'card-glow':'0 0 35px #44ADF8' ,
         'custom-card': '3px 3px 0 0 #ffffff',
       },
     },
@@ -26,8 +27,8 @@ export default withMT({
       'max-sm': { 'max': '767px' },
     },
     fontFamily:{
-      sans: ["Josefin Sans", "sans-serif"],
-      'josefin-slab': ["Josefin Slab", "serif"]
+      sans: ["Karla", "sans-serif"],
+      'cairo': ["Cairo", "serif"]
     }
   },
   plugins: [],

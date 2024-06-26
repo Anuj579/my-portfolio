@@ -13,7 +13,7 @@ import profile from '../../assets/profile img.png'
 import gradient from '../../assets/radial gradient.png'
 import whitegradient from '../../assets/white radial gradient.png'
 import uiux from '../../assets/ui-ux.jpg'
-import frontend from '../../assets/web dev.jpg'
+import frontend from '../../assets/frontend.jpg'
 import backend from '../../assets/backend.jpg'
 import proj1laptop from '../../assets/proj1-laptop.png'
 import proj1mobile from '../../assets/proj1-mobile.png'
@@ -22,7 +22,7 @@ import { Link } from 'react-router-dom'
 import ServiceCard from './ServiceCard'
 import ProjectCard from '../Projects/ProjectCard'
 import Connect from '../Connect'
-
+import TypeEffect from './TypeEffect';
 
 function Home({ isLoading }) {
   const [waitingTime, setWaitingTime] = useState(false)
@@ -42,12 +42,12 @@ function Home({ isLoading }) {
         <img src={triangle} alt="triangle" className='absolute left-[10%] top-[20%] animate-rotate-up-down-left' />
         <img src={triangle} alt="triangle" className='absolute right-[12%] top-[30%] rotate-[78deg] animate-rotate-up-down-right' />
         <img src={triangle} alt="triangle" className='absolute left-2/4 bottom-[10%] rotate-[-90deg] animate-rotate-left-right' />
-        <div className='container flex flex-wrap md:flex-nowrap justify-between items-center mx-auto my-10 px-4'>
+        <div className='container flex flex-wrap md:flex-nowrap justify-between items-center mx-auto my-10 gap-4 px-4'>
           <div className='relative'>
-            <h1 className='text-[40px] font-josefin-slab font-black'>Hello World! <br /> I'm <span className='text-secondary relative sm:whitespace-normal whitespace-nowrap'><svg aria-hidden="true" id="name-underline" viewBox="0 0 297 33" className={`absolute left-0 top-2/3 h-[0.58em] w-full fill-transparent sm:opacity-0  ${waitingTime ? "block" : "hidden"} stroke-[#9ceaff9d] stroke-[3.5]`} preserveAspectRatio="none"><path d="M0.999989 20.5C79.5 4.5 85.5 5.5 85.5 5.5C354.5 -9.50001 -56.5262 35.0001 216.5 22.8813C235.5 22.0379 266.931 23.7779 296.5 31" /></svg> <span>Anuj Chaudhary</span></span> </h1>
-            <h2 className='text-3xl font-bold font-josefin-slab my-10'>Web Developer</h2>
-            <p className='hover:text-secondary fill-white w-max hover:fill-secondary md:mt-20 transition-all duration-300'>
-              <Link to={'/about'} className='learn-more-link flex items-center relative font-medium text-lg'><span>Explore my portofolio</span> <svg xmlns="http://www.w3.org/2000/svg" className='h-5 fill-inherit ms-3' viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" /></svg></Link>
+            <h1 className='text-2xl font-cairo font-semibold tracking-wide'>Hello World! 👋 I am  </h1><span className='text-secondary text-[42px] font-extrabold font-cairo tracking-wide relative sm:whitespace-normal whitespace-nowrap'><svg aria-hidden="true" id="name-underline" viewBox="0 0 297 33" className={`absolute left-0 top-[64%] h-[0.58em] w-full fill-transparent sm:opacity-0  ${waitingTime ? "block" : "hidden"} stroke-[#9fecff4b] stroke-[3.5]`} preserveAspectRatio="none"><path d="M0.999989 20.5C79.5 4.5 85.5 5.5 85.5 5.5C354.5 -9.50001 -56.5262 35.0001 216.5 22.8813C235.5 22.0379 266.931 23.7779 296.5 31" /></svg> <span>Anuj Chaudhary</span></span>
+            <h2 className='text-3xl font-extrabold tracking-wide text-accent font-cairo my-7'><TypeEffect /></h2>
+            <p className='hover:text-secondary fill-white w-max hover:fill-secondary mt-10 md:mt-14 transition-all duration-300'>
+              <Link to={'/about'} className='learn-more-link flex items-center relative font-medium text-lg'><span>Explore my portfolio</span> <svg xmlns="http://www.w3.org/2000/svg" className='h-[18px] fill-inherit ms-3' viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" /></svg></Link>
             </p>
           </div>
           <div>
@@ -55,11 +55,11 @@ function Home({ isLoading }) {
           </div>
         </div>
       </section>
-      
+
       <section className='container px-4 mx-auto'>
         {/* Get To know me div */}
         <div className='mt-20'>
-          <h1 className='font-josefin-slab font-extrabold text-4xl text-center mx-16 my-10'>Get To <span className='text-secondary underline sm:whitespace-normal whitespace-nowrap'>Know Me</span></h1>
+          <h1 className='font-cairo font-bold text-4xl text-center mx-16 my-10'>Get To <span className='text-secondary underline sm:whitespace-normal whitespace-nowrap'>Know Me</span></h1>
           <div className='flex flex-col md:flex-row  gap-16 items-center'>
             <div>
               <p className='text-accent'>My journey into the world of programming has been a thrilling ride of continuous learning and discovery. I have honed my skills in HTML, CSS, JavaScript, and Python, and I am actively expanding my knowledge in frameworks like React JS and Django.</p><br />
@@ -76,7 +76,7 @@ function Home({ isLoading }) {
 
         {/* Services div */}
         <div className='my-20'>
-          <h1 className='font-josefin-slab font-extrabold text-4xl text-center mx-4 my-10'>What Can I Do <span className='text-secondary underline sm:whitespace-normal whitespace-nowrap'>For You</span></h1>
+          <h1 className='font-cairo font-bold text-4xl text-center mx-4 my-10'>What Can I Do <span className='text-secondary underline sm:whitespace-normal whitespace-nowrap'>For You</span></h1>
           <p className='text-accent md:text-center'>Explore my expertise and discover how I can help bring your projects to life.</p>
           {/* For smaller screens */}
           <div className="md:hidden mt-14">
@@ -113,7 +113,7 @@ function Home({ isLoading }) {
           </div>
 
           {/* For larger screens */}
-          <div className='hidden md:flex justify-center items-center flex-row gap-10 flex-wrap mt-14'>
+          <div className='hidden md:flex justify-center items-center flex-row gap-14 flex-wrap mt-14'>
             <ServiceCard
               image={uiux}
               title="UI/UX Design"
@@ -134,7 +134,7 @@ function Home({ isLoading }) {
 
         {/* Highlighted creations div */}
         <div className='mt-20'>
-          <h1 className='font-josefin-slab font-extrabold text-4xl text-center mx-10 my-10'>Highlighted <span className='text-secondary underline'>Creations</span></h1>
+          <h1 className='font-font-cairo font-bold text-4xl text-center mx-10 my-10'>Highlighted <span className='text-secondary underline'>Creations</span></h1>
           <p className='text-accent md:text-center mb-6'>Explore my top projects, crafted with passion and creativity, just for you.</p>
           <div className='md:hidden my-10'>
             <Swiper
@@ -195,7 +195,7 @@ function Home({ isLoading }) {
 
         {/* Quote div */}
         <div className='my-20 text-center'>
-          <h1 className='font-josefin-slab text-3xl font-bold'>“If, at first, you do not succeed, call it version 1.0”</h1>
+          <h1 className='font-cairo text-3xl font-semibold'>“If, at first, you do not succeed, call it version 1.0”</h1>
           <p className='mt-6'>- Khayri R.R. Woulfe</p>
         </div>
 

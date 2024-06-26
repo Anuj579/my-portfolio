@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --primary: #070B14;
-  --secondary: #40CFF7;
+  --primary: #000000;
+  --secondary: #44ADF8;
 }
 
 /* Styling loader*/
@@ -13,7 +13,7 @@
   outline: 1px solid var(--secondary);
   outline-offset: 1px;
   position: relative;
-  box-shadow: 0 0 10px #40cff7ef;
+  box-shadow: 0 0 10px #44ADF8ef;
   padding: .12rem 10rem;
 }
 
@@ -40,8 +40,10 @@
 }
 
 
-p {
-  font-size: 18px;
+@media screen and (min-width:768px) {  
+  p {
+    font-size: 18px;
+  }
 }
 
 /* Custom scrollbar */
@@ -51,7 +53,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #0b9dc5;
+  background-color: #44ADF8cc;
   border-radius: 10px;
 }
 
@@ -61,7 +63,7 @@ p {
 }
 
 .swiper-pagination-bullet{
-  background-color: #40CFF7 !important;
+  background-color: var(--secondary) !important;
 }
 /* 
 .custom-btn{
