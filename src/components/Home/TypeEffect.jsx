@@ -7,14 +7,13 @@ function TypeEffect() {
       options={{
         strings: [
           "Web Developer",
-          "Frontend Developer",
-          "Backend Developer",
-          "Full Stack Developer",
+          "Django Developer",
+          "Freelancer",
         ],
         autoStart: true,
         loop: true,
         delay: 40,
-        deleteSpeed: 40,
+        deleteSpeed: 30,
       }}
     />
   );

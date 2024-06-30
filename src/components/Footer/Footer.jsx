@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.svg'
 
 function Footer() {
   return (
@@ -8,7 +8,7 @@ function Footer() {
       <div className="flex flex-wrap items-end gap-y-6 gap-x-12 text-center justify-between mb-14">
         <div className='text-left'>
           <Link to="#" className=''>
-            <img src={logo} className="h-11 mb-5" alt="" />
+            <img src={logo} className="h-12 mb-5" alt="" />
           </Link>
           <p className='text-gray-300 text-base'>Crafting innovative web solutions with a passion for excellence and a touch of creativity.</p>
         </div>

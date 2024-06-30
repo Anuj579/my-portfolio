@@ -15,7 +15,7 @@ export default withMT({
       textColor: 'white',
       boxShadow: {
         'btn-glow': '0 0 5px #44ADF8, 0 0 25px #44ADF8',
-        'card-glow':'0 0 35px #44ADF8' ,
+        'card-glow':'0 0 40px #44adf8b4' ,
         'custom-card': '3px 3px 0 0 #ffffff',
       },
     },
