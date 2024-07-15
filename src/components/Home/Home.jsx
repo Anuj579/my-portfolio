@@ -58,8 +58,9 @@ function Home({ isLoading }) {
 
       <section className='container px-4 mx-auto'>
         {/* Get To know me div */}
-        <div className='mt-20'>
-          <h1 className='font-cairo font-bold text-4xl text-center mx-16 my-10'>Get To <span className='text-secondary underline sm:whitespace-normal whitespace-nowrap'>Know Me</span></h1>
+        <div className='py-20'>
+          <h1 className='font-cairo font-bold text-4xl mt-10'>Get To Know Me</h1>
+          <hr className='border-b-4 border-secondary w-40 mt-3 mb-14' />
           <div className='flex flex-col md:flex-row  gap-16 items-center'>
             <div>
               <p className='text-accent'>My journey into the world of programming has been a thrilling ride of continuous learning and discovery. I have honed my skills in HTML, CSS, JavaScript, and Python, and I am actively expanding my knowledge in frameworks like React JS and Django.</p><br />
@@ -75,9 +76,10 @@ function Home({ isLoading }) {
         </div>
 
         {/* Services div */}
-        <div className='my-20'>
-          <h1 className='font-cairo font-bold text-4xl text-center mx-4 my-10'>What Can I Do <span className='text-secondary underline sm:whitespace-normal whitespace-nowrap'>For You</span></h1>
-          <p className='text-accent md:text-center'>Explore my expertise and discover how I can help bring your projects to life.</p>
+        <div className='py-20'>
+          <h1 className='font-cairo font-bold text-4xl mt-10'>What Can I Do <span className='whitespace-nowrap'>For You</span></h1>
+          <hr className='border-b-4 border-secondary w-52 mt-3 mb-14' />
+          <p className='text-accent '>Explore my expertise and discover how I can help bring your projects to life. With a solid foundation in web development, I offer a blend of creative and technical skills. Whether you need a visually appealing UI/UX design, efficient frontend development with React.js, or robust backend solutions using Python and Django, I am here to support your project. My aim is to create seamless digital experiences that exceed your expectations. Let's collaborate to turn your ideas into reality.</p>
           {/* For smaller screens */}
           <div className="md:hidden mt-14">
             <Swiper
@@ -133,9 +135,10 @@ function Home({ isLoading }) {
         </div>
 
         {/* Highlighted creations div */}
-        <div className='mt-20'>
-          <h1 className='font-font-cairo font-bold text-4xl text-center mx-10 my-10'>Highlighted <span className='text-secondary underline'>Creations</span></h1>
-          <p className='text-accent md:text-center mb-6'>Explore my top projects, crafted with passion and creativity, just for you.</p>
+        <div className='py-20'>
+          <h1 className='font-cairo font-bold text-4xl mt-10'>Highlighted Creations</h1>
+          <hr className='border-b-4 border-secondary w-48 mt-3 mb-14' />
+          <p className='text-accent mb-6'>Explore my top projects, crafted with passion and creativity, just for you. These highlighted creations showcase my dedication to delivering high-quality web solutions. From innovative UI/UX designs to complex frontend and backend developments, each project demonstrates my ability to bring ideas to life through meticulous attention to detail and cutting-edge technology. Dive into my portfolio to see how I combine aesthetic appeal with functionality to create impactful digital experiences.</p>
           <div className='md:hidden my-10'>
             <Swiper
               modules={[EffectCreative, Pagination]}
@@ -155,7 +158,6 @@ function Home({ isLoading }) {
               }}
               pagination={true}
               grabCursor={true}
-            // style={{ overflow: 'hidden' }}
             >
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ProjectCard

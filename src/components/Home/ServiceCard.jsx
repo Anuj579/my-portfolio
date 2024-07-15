@@ -21,6 +21,7 @@ function ServiceCard({ image, title, description }) {
                 <div className="absolute inset-0 flex flex-col justify-center md:justify-start md:mt-14 mx-8 md:mx-4 text-start text-white">
                     <div className='h-3 w-3 rounded-full bg-secondary mb-2'></div>
                     <h3 className="text-[26px] md:text-2xl font-cairo font-bold ">{title}</h3>
+                    
                 </div>
             </div>
             <Dialog
@@ -33,12 +34,12 @@ function ServiceCard({ image, title, description }) {
                 }}
             >
                 <DialogHeader className='font-cairo font-bold text-white'>{title}</DialogHeader>
+                <hr className='border-b-2 border-secondary w-[106px] mx-4 -mt-3 mb-3'/>
                 <DialogBody className=' text-accent'>
                     {description}
                 </DialogBody>
                 <DialogFooter>
-                    {/* <button onClick={handleOpen} className='px-3 py-2 bg-secondary font-bold rounded-md text-white'>Close</button> */}
-                    <Button onClick={handleOpen} className='bg-secondary text-white font-bold px-4 py-2 text-sm'>
+                    <Button onClick={handleOpen} className='bg-secondary text-white font-bold px-4 py-2 text-sm outline-none'>
                         Close
                     </Button>
                 </DialogFooter>
