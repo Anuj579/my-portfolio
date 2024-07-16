@@ -21,7 +21,7 @@ function Footer() {
       <div className="text-center text-gray-300 ">
         <hr className="my-5 w-full border-[#ffffff25]" />
         <p className='text-base'>
-          Copyright &copy; 2024 <span className='italic'>AC</span><span className='font-body italic'>~</span>
+          Copyright &copy; 2024 <span className='italic text-white'>AC</span>
         </p>
         <p className='mt-1 text-base'>Designed & Developed by <a href="https://github.com/anuj579" target='_blank'><span className='text-secondary font-medium'>AnujChaudhary</span></a></p>
       </div>

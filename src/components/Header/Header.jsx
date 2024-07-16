@@ -73,7 +73,7 @@ function Header() {
 
   return (
     <>
-      <nav className={`p-4 fixed top-0 w-full ${scrolledNavbar && 'bg-[#0c1821] shadow-md shadow-black'} transition-all z-20`}>
+      <nav className={`p-4 fixed top-0 w-full ${scrolledNavbar && 'bg-[#0c1821] shadow-md shadow-black'} transition-all z-[9999]`}>
         <div className="md:container mx-auto w-full flex justify-between md:justify-between items-center ">
           {/* Logo */}
           <Link to="/">
