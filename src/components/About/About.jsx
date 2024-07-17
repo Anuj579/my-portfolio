@@ -15,6 +15,11 @@ import wordpressIcon from '../../assets/wordpress-logo.svg';
 import figmaIcon from '../../assets/figma-logo.svg';
 import vscodeIcon from '../../assets/vscode-logo.svg';
 import githubIcon from '../../assets/github-logo.svg';
+import educationIcon from '../../assets/education-icon.svg';
+import certificationIcon from '../../assets/certification-icon.svg';
+import eyeIcon from '../../assets/eye.svg';
+import CustomButton from '../CustomButton';
+import Connect from '../Connect';
 
 function About() {
   return (
@@ -30,7 +35,7 @@ function About() {
           <Link to="/about" className='text-white text-base' style={{ fontWeight: '400' }}>ABOUT</Link>
         </Breadcrumbs>
       </section>
-      <div className='container px-4 mx-auto'>
+      <section className='container px-4 mx-auto'>
         {/* Know who I am div */}
         <div className='py-20'>
           <h1 className='font-cairo font-bold text-4xl text-center md:text-left mt-10'>Know Who I Am</h1>
@@ -153,7 +158,43 @@ function About() {
             </Tooltip>
           </div>
         </div>
-      </div>
+
+        {/* Education and certifications div */}
+        <div className="py-20">
+          <h1 className='font-cairo font-bold text-4xl text-center md:text-left mt-10'>Education and Certifications</h1>
+          <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
+          <p className='text-accent'>My formal education and additional certifications have equipped me with a solid foundation in web development.</p>
+          <div className='flex justify-center md:gap-20 flex-col md:flex-row my-10'>
+            <div className='mb-5'>
+              <h2 className='font-cairo text-2xl font-semibold border-b-4 border-secondary w-max'>Education:</h2>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={educationIcon} alt="degree-icon" className='mt-1' /><span>Bachelor of Computer Applications (BCA) <br /> <span className='font-extralight'>Mangalayatan University, Aligarh, India
+                (Currently Pursuing)</span></span></p>
+            </div>
+            <div>
+              <h2 className='font-cairo text-2xl font-semibold border-b-4 border-secondary w-max'>Certifications:</h2>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>Web Designing Technology <br /> <span className='font-extralight'>Incapp, 2022</span></span></p>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>Python Technology <br /> <span className='font-extralight'>Incapp, 2023</span></span></p>
+              <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={certificationIcon} alt="certification-icon" className='mt-1' /><span>Django Technology <br /> <span className='font-extralight'>Incapp, 2023</span></span></p>
+            </div>
+          </div>
+
+        </div>
+        <hr className='border-[#ffffff25]' />
+
+        {/* View Resume */}
+        <div className='py-20 flex items-center flex-wrap gap-10'>
+          <p className='text-accent'>Explore my detailed resume to learn more about my professional journey and skills.</p>
+          <a href="https://youtube.com" target='_blank'><CustomButton
+            text="View My Resume"
+            icon={eyeIcon}
+          /></a>
+        </div>
+
+        {/* Let's Connect div */}
+        <div className='mb-14 py-20'>
+          <Connect />
+        </div>
+      </section>
     </>
   )
 }
