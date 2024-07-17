@@ -20,7 +20,7 @@ import proj1mobile from '../../assets/proj1-mobile.png'
 import triangle from '../../assets/triangle.svg'
 import { Link } from 'react-router-dom'
 import ServiceCard from './ServiceCard'
-import ProjectCard from '../Projects/ProjectCard'
+import ProjectCard from '../Portfolio/ProjectCard'
 import Connect from '../Connect'
 import TypeEffect from './TypeEffect';
 
