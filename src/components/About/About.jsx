@@ -206,7 +206,7 @@ function About() {
         </div>
 
         {/* Let's Connect div */}
-        <div className='mb-14 py-20'>
+        <div className='py-20'>
           <Connect />
         </div>
       </section>
