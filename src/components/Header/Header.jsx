@@ -145,6 +145,7 @@ function Header() {
               <CustomButton
                 text="email me"
                 icon={envelopeicon}
+                className='w-6'
               />
             </div>
           </Drawer>

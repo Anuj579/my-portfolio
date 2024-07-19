@@ -1,6 +1,7 @@
 import React from 'react'
 import gradient from '../../assets/radial gradient.png'
-import eyeicon from '../../assets/eye.svg'
+import githubhicon from '../../assets/github-icon.svg'
+import linkicon from '../../assets/link-icon.svg'
 import CustomButton from '../CustomButton';
 
 function ProjectCard({ laptopImg, mobileImg, title, description }) {
@@ -17,11 +18,13 @@ function ProjectCard({ laptopImg, mobileImg, title, description }) {
                 <div className='flex flex-wrap gap-5 justify-center'>
                     <CustomButton
                         text="Demo"
-                        icon={eyeicon}
+                        icon={linkicon}
+                        className='w-[18px]'
                     />
                     <CustomButton
                         text="Code"
-                        icon={eyeicon}
+                        icon={githubhicon}
+                        className='w-5'
                     />
                 </div>
             </div>

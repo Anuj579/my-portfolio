@@ -6,17 +6,16 @@ import arrow from '../assets/arrow.svg'
 
 function Connect() {
     return (
-        <div className='rounded-md py-12 md:py-16 px-2 flex flex-col items-center shadow-xl bg-[#0c1821] shadow-[#00000057] relative' >
+        <div className='rounded-md py-12 md:py-16 px-2 flex flex-col items-center shadow-xl  bg-gradient-to-tr from-[#0c1821] to-[#0c182160] shadow-[#00000057] relative' >
             <img src={triangle} alt="triangle" className='h-4 md:h-5 absolute left-[10%] top-[20%] animate-rotate-up-down-left' />
             <img src={triangle} alt="triangle" className='h-4 md:h-5 absolute right-[10%] top-[30%] rotate-[78deg] animate-rotate-up-down-right' />
             <img src={triangle} alt="triangle" className='h-4 md:h-5 absolute left-2/4 bottom-[5%] rotate-[-90deg] animate-rotate-left-right' />
-            <h1 className='text-4xl font-cairo font-bold'>Let's Connect</h1>
-            <hr className='border-b-4 border-secondary w-36 mt-3 mb-14' />
-            <p className='text-accent relative'>Have a project in mind or just want to chat? Drop me a message!</p>
+            <p className='text-white relative text-4xl md:text-[44px] text-center font-bold font-cairo mx-3 tracking-wide'>Let's create something <i>amazing</i> together!</p>
             <img src={arrow} alt="arrow-img" className='translate-x-10 mt-4 md:mt-7 mb-2  ' />
             <CustomButton
                 text="Send a message"
                 icon={send}
+                className='w-6 h-6'
             />
         </div>
     )

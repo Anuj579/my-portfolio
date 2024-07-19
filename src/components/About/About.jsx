@@ -38,15 +38,22 @@ function About() {
       <section className='container px-4 mx-auto'>
         {/* Know who I am div */}
         <div className='py-20'>
-          <h1 className='font-cairo font-bold text-4xl text-center md:text-left mt-10'>Know Who I Am</h1>
-          <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
-          <p className='text-accent'>Hi, I'm Anuj Chaudhary, a passionate web developer based in Haryana, India, with a knack for creating engaging and interactive websites. Currently pursuing my BCA through online education, I specialize in both front-end and back-end development. When I'm not coding, I enjoy exploring new design trends and staying updated with the latest in tech.</p>
+          <div className='flex flex-col items-center'>
+            <h1 className='font-cairo font-bold text-4xl text-center mt-10'>Know Who I Am</h1>
+            <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
+          </div>
+          <p className='text-accent'>Hi, I'm Anuj Chaudhary, a passionate web developer based in Haryana, India, with a knack for creating engaging and interactive websites. My journey in web development started with a keen interest in technology, which has now grown into a full-fledged passion for coding and designing.</p><br />
+          <p className='text-accent'>Currently pursuing my BCA through online education, I am dedicated to expanding my knowledge and expertise in both front-end and back-end development.</p><br />
+          <p className='text-accent'>When I'm not coding, I enjoy exploring new design trends and staying updated with the latest in tech. I love listening to music, which helps me relax and stay inspired. Additionally, playing video games is one of my favorite pastimes, offering a fun way to unwind and spark creativity.</p><br />
+          <p className='text-accent'>Through continuous learning and hands-on experience, I aim to push the boundaries of what's possible in web development and bring innovative ideas to life.</p>
         </div>
 
         {/* Areas of Expertise div */}
         <div className="py-20">
-          <h1 className='font-cairo font-bold text-4xl text-center md:text-left mt-10'>Areas of Expertise</h1>
-          <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
+          <div className='flex flex-col items-center'>
+            <h1 className='font-cairo font-bold text-4xl text-center mt-10'>Areas of Expertise</h1>
+            <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
+          </div>
           <p className='text-accent'>I have honed a diverse skill set through rigorous education and hands-on experience in various projects. My expertise spans multiple domains, enabling me to tackle complex challenges effectively. Below are some key areas where I excel, showcasing my ability to deliver high-quality results.</p>
           <div className='flex flex-wrap justify-center gap-12 my-14'>
             <Tooltip
@@ -120,8 +127,10 @@ function About() {
 
         {/* Tools I play with div */}
         <div className="py-20">
-          <h1 className='font-cairo font-bold text-4xl text-center md:text-left mt-10'>Tools I play With</h1>
-          <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
+          <div className='flex flex-col items-center'>
+            <h1 className='font-cairo font-bold text-4xl text-center mt-10'>Tools I play With</h1>
+            <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
+          </div>
           <p className='text-accent'>I leverage a variety of powerful tools to streamline my workflow and enhance productivity. From coding and design to version control and content management, these tools play a pivotal role in my development process. Here are a few key tools I frequently use: WordPress for robust content management, Figma for intuitive design and prototyping, Visual Studio Code for efficient coding, and GitHub for seamless version control and collaboration.</p>
           <div className='flex flex-wrap justify-center gap-12 my-14'>
             <Tooltip
@@ -161,9 +170,11 @@ function About() {
 
         {/* Education and certifications div */}
         <div className="py-20">
-          <h1 className='font-cairo font-bold text-4xl text-center md:text-left mt-10'>Education and Certifications</h1>
-          <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
-          <p className='text-accent'>My formal education and additional certifications have equipped me with a solid foundation in web development.</p>
+          <div className='flex flex-col items-center'>
+            <h1 className='font-cairo font-bold text-4xl text-center'>Education and Certifications</h1>
+            <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
+          </div>
+          <p className='text-accent'>My formal education and additional certifications have equipped me with a solid foundation in web development. From mastering the basics to advanced concepts, I've gained valuable skills and knowledge that are crucial for creating effective and efficient web applications. These academic achievements and professional credentials reflect my commitment to continuous learning and excellence in the field.</p>
           <div className='flex justify-center md:gap-20 flex-col md:flex-row my-10'>
             <div className='mb-5'>
               <h2 className='font-cairo text-2xl font-semibold border-b-4 border-secondary w-max'>Education:</h2>
@@ -182,11 +193,12 @@ function About() {
         <hr className='border-[#ffffff25]' />
 
         {/* View Resume */}
-        <div className='py-20 flex items-center flex-wrap gap-10'>
-          <p className='text-accent'>Explore my detailed resume to learn more about my professional journey and skills.</p>
+        <div className='py-20 flex flex-col items-center flex-wrap gap-10'>
+          <p className='text-accent'>Get an in-depth look at my education, skills, and projects.</p>
           <a href="https://youtube.com" target='_blank'><CustomButton
             text="View My Resume"
             icon={eyeIcon}
+            className='w-6'
           /></a>
         </div>
 
