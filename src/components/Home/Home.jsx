@@ -17,6 +17,8 @@ import frontend from '../../assets/frontend.jpg'
 import backend from '../../assets/backend.jpg'
 import proj1laptop from '../../assets/proj1-laptop.png'
 import proj1mobile from '../../assets/proj1-mobile.png'
+import proj2laptop from '../../assets/proj2-laptop.png'
+import proj2mobile from '../../assets/proj2-mobile.png'
 import triangle from '../../assets/triangle.svg'
 import zigzagLine from '../../assets/zigzag-line.svg'
 import { Link } from 'react-router-dom'
@@ -146,6 +148,8 @@ function Home({ isLoading }) {
             <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
           <p className='text-accent mb-6'>Explore my top projects, crafted with passion and creativity, just for you. These highlighted creations showcase my dedication to delivering high-quality web solutions. From innovative UI/UX designs to complex frontend and backend developments, each project demonstrates my ability to bring ideas to life through meticulous attention to detail and cutting-edge technology. Dive into my portfolio to see how I combine aesthetic appeal with functionality to create impactful digital experiences.</p>
+
+          {/* Project card for smaller screens */}
           <div className='md:hidden my-10'>
             <Swiper
               modules={[EffectCreative, Pagination]}
@@ -170,16 +174,20 @@ function Home({ isLoading }) {
                 <ProjectCard
                   laptopImg={proj1laptop}
                   mobileImg={proj1mobile}
-                  title="E-commerce Website"
-                  description="Developed an E-commerce webapp, which have many features including user authentication, add to cart, placing order, order history , selecting quantities of each product and search your choice and many more."
+                  title="IceCreamsCorner Web App"
+                  description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with quantity limits, order placement, and order history. Responsive design ensures a seamless experience across devices."
+                  demoLink="https://anuj459.pythonanywhere.com/"
+                  codeLink="https://github.com/Anuj579/IceCreamsCorner_webapp"
                 />
               </SwiperSlide>
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ProjectCard
-                  laptopImg={proj1laptop}
-                  mobileImg={proj1mobile}
-                  title="E-commerce Website"
-                  description="Developed an E-commerce webapp, which have many features including user authentication, add to cart, placing order, order history , selecting quantities of each product and search your choice and many more."
+                  laptopImg={proj2laptop}
+                  mobileImg={proj2mobile}
+                  title="Time Tracer Website"
+                  description="A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see remaining or elapsed time, with a user-friendly and responsive design."
+                  demoLink="https://timetracer9.netlify.app/"
+                  codeLink="https://github.com/Anuj579/TimeTracer"
                 />
               </SwiperSlide>
             </Swiper>
@@ -190,14 +198,18 @@ function Home({ isLoading }) {
             <ProjectCard
               laptopImg={proj1laptop}
               mobileImg={proj1mobile}
-              title="E-commerce Website"
-              description="Developed an E-commerce webapp, which have many features including user authentication, add to cart, placing order, order history , selecting quantities of each product and search your choice and many more."
+              title="IceCreamsCorner Web App"
+              description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with quantity limits, order placement, and order history. Responsive design ensures a seamless experience across devices."
+              demoLink="https://anuj459.pythonanywhere.com/"
+              codeLink="https://github.com/Anuj579/IceCreamsCorner_webapp"
             />
             <ProjectCard
-              laptopImg={proj1laptop}
-              mobileImg={proj1mobile}
-              title="E-commerce Website"
-              description="Developed an E-commerce webapp, which have many features including user authentication, add to cart, placing order, order history , selecting quantities of each product and search your choice and many more."
+              laptopImg={proj2laptop}
+              mobileImg={proj2mobile}
+              title="Time Tracer Website"
+              description="A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see remaining or elapsed time, with a user-friendly and responsive design."
+              demoLink="https://timetracer9.netlify.app/"
+              codeLink="https://github.com/Anuj579/TimeTracer"
             />
           </div>
         </div>
@@ -210,7 +222,7 @@ function Home({ isLoading }) {
         </div>
 
         {/* Let's Connect div */}
-        <div className='mb-14 py-20'>
+        <div className='py-20'>
           <Connect />
         </div>
       </section>
