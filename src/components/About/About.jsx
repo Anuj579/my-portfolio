@@ -18,6 +18,8 @@ import githubIcon from '../../assets/github-logo.svg';
 import educationIcon from '../../assets/education-icon.svg';
 import certificationIcon from '../../assets/certification-icon.svg';
 import eyeIcon from '../../assets/eye.svg';
+import downloadIcon from '../../assets/download-icon.svg';
+import arrowIcon from '../../assets/arrow.svg';
 import CustomButton from '../CustomButton';
 import Connect from '../Connect';
 
@@ -175,7 +177,7 @@ function About() {
             <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
           <p className='text-accent'>My formal education and additional certifications have equipped me with a solid foundation in web development. From mastering the basics to advanced concepts, I've gained valuable skills and knowledge that are crucial for creating effective and efficient web applications. These academic achievements and professional credentials reflect my commitment to continuous learning and excellence in the field.</p>
-          <div className='flex justify-center md:gap-20 flex-col md:flex-row my-10'>
+          <div className='flex justify-center md:gap-20 flex-col md:flex-row mt-10'>
             <div className='mb-5'>
               <h2 className='font-cairo text-2xl font-semibold border-b-4 border-secondary w-max'>Education:</h2>
               <p className='font-medium flex items-start gap-2 my-7 text-accent'><img src={educationIcon} alt="degree-icon" className='mt-1' /><span>Bachelor of Computer Applications (BCA) <br /> <span className='font-extralight'>Mangalayatan University, Aligarh, India
@@ -193,12 +195,13 @@ function About() {
         <hr className='border-[#ffffff25]' />
 
         {/* View Resume */}
-        <div className='py-20 flex flex-col items-center flex-wrap gap-10'>
-          <p className='text-accent'>Get an in-depth look at my education, skills, and projects.</p>
-          <a href="https://youtube.com" target='_blank'><CustomButton
+        <div className='py-20 flex flex-col items-center'>
+          <p className='text-accent italic mb-6'>Curious about my journey and achievements? Take a closer look at my detailed resume.</p>
+          <img src={arrowIcon} alt="arrow-icon" className='translate-x-10 mb-3' />
+          <a href="https://drive.google.com/file/d/1VfrwdctemkqPPCoykPZG-y8HkXSLqmue/view?usp=sharing" target='_blank'><CustomButton
             text="View My Resume"
-            icon={eyeIcon}
-            className='w-6'
+            icon={downloadIcon}
+            className='w-[18px]'
           /></a>
         </div>
 

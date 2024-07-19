@@ -18,6 +18,7 @@ import backend from '../../assets/backend.jpg'
 import proj1laptop from '../../assets/proj1-laptop.png'
 import proj1mobile from '../../assets/proj1-mobile.png'
 import triangle from '../../assets/triangle.svg'
+import zigzagLine from '../../assets/zigzag-line.svg'
 import { Link } from 'react-router-dom'
 import ServiceCard from './ServiceCard'
 import ProjectCard from '../Portfolio/ProjectCard'
@@ -202,9 +203,10 @@ function Home({ isLoading }) {
         </div>
 
         {/* Quote div */}
-        <div className='py-10 text-center'>
-          <h1 className='font-cairo text-3xl md:text-4xl font-semibold'>“If, at first, you do not succeed, call it version 1.0”</h1>
-          <p className='mt-6'>- Khayri R.R. Woulfe</p>
+        <div className='py-20 flex flex-col items-center'>
+          <h1 className='font-cairo text-3xl md:text-[40px] font-semibold'>“If, at first, you do not succeed, call it version 1.0”.</h1>
+          <p className='mt-6 text-[20px] text-accent'>- Khayri R.R. Woulfe</p>
+          <img src={zigzagLine} alt="zigzag-line" className='w-80 mt-5 -skew-x-[20deg]' />
         </div>
 
         {/* Let's Connect div */}

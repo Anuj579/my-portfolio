@@ -6,7 +6,7 @@ import arrow from '../assets/arrow.svg'
 
 function Connect() {
     return (
-        <div className='rounded-md py-12 md:py-16 px-2 flex flex-col items-center shadow-xl  bg-gradient-to-tr from-[#0c1821] to-[#0c182160] shadow-[#00000057] relative' >
+        <div className='rounded-xl py-12 md:py-16 px-2 flex flex-col items-center shadow-xl  bg-gradient-to-tr from-[#0c1821] to-[#0c182160] shadow-[#00000057] relative' >
             <img src={triangle} alt="triangle" className='h-4 md:h-5 absolute left-[10%] top-[20%] animate-rotate-up-down-left' />
             <img src={triangle} alt="triangle" className='h-4 md:h-5 absolute right-[10%] top-[30%] rotate-[78deg] animate-rotate-up-down-right' />
             <img src={triangle} alt="triangle" className='h-4 md:h-5 absolute left-2/4 bottom-[5%] rotate-[-90deg] animate-rotate-left-right' />
@@ -16,6 +16,7 @@ function Connect() {
                 text="Send a message"
                 icon={send}
                 className='w-6 h-6'
+                to='/contact'
             />
         </div>
     )
