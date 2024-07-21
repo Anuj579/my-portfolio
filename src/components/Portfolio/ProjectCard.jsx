@@ -15,7 +15,7 @@ function ProjectCard({ laptopImg, mobileImg, title, description, demoLink, codeL
             <div className='text-center mx-5 flex flex-col items-center'>
                 <h2 className='text-2xl mb-4 font-semibold'>{title}</h2>
                 <p className='text-accent text-base min-h-36 mb-8'>{description}</p>
-                <div className='flex flex-wrap gap-5 justify-center'>
+                <div className='flex flex-wrap gap-8 justify-center'>
                     <a href={demoLink} target='_blank'>
                         <CustomButton
                             text="Demo"
