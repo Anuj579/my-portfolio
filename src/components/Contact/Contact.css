@@ -1,0 +1,91 @@
+:root {
+    --secondary: #44ADF8;
+}
+
+.contact-hero-section {
+    background: linear-gradient(270deg, #0000005d, #000000b9), url(../../assets/contact-bg.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+}
+
+/* .contact-hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    z-index: 1;
+  } */
+
+.contact-form {
+    box-sizing: border-box;
+    background: linear-gradient(-30deg, #010b13, #010b1304);
+    box-shadow: 0 0 15px #0473c215, 0 0 35px #c2d3df17;
+}
+
+.contact-form form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.contact-form button:hover {
+    background: var(--secondary);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--secondary),
+        0 0 25px var(--secondary)
+}
+
+.contact-form button span {
+    position: absolute;
+    display: block;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.contact-form button span:nth-child(1) {
+    bottom: 2px;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--secondary));
+    animation: btn-anim1 2s linear infinite;
+}
+
+.input-field {
+    font-size: 16px !important;
+}
+
+/* Autofill Styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px #0c182100 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
