@@ -1,0 +1,6 @@
+.about-hero-section {
+    background: linear-gradient(270deg, #0000008e, #000000b9), url(../../assets/about-bg.jpg);
+    background-size: cover;
+    background-position: center 55%;
+    background-repeat: no-repeat;
+}

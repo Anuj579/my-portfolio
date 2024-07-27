@@ -1,5 +1,4 @@
 import React from 'react'
-import about_bg from '../../assets/about bg.png'
 import { Link } from "react-router-dom";
 import { Breadcrumbs, Tooltip } from "@material-tailwind/react";
 import SkillBox from './SkillBox';
@@ -17,16 +16,16 @@ import vscodeIcon from '../../assets/vscode-logo.svg';
 import githubIcon from '../../assets/github-logo.svg';
 import educationIcon from '../../assets/education-icon.svg';
 import certificationIcon from '../../assets/certification-icon.svg';
-import eyeIcon from '../../assets/eye.svg';
 import downloadIcon from '../../assets/download-icon.svg';
 import arrowIcon from '../../assets/arrow.svg';
 import CustomButton from '../CustomButton';
 import Connect from '../Connect';
+import './About.css'
 
 function About() {
   return (
     <>
-      <section className='bg-cover bg-center bg-no-repeat min-h-[45vh] md:min-h-[65vh] flex flex-col justify-center items-center shadow-lg shadow-black  bg-opacity-80' style={{ backgroundImage: `url(${about_bg})` }}>
+      <section className='about-hero-section relative min-h-[45vh] md:min-h-[65vh] flex flex-col justify-center items-center shadow-lg shadow-black '>
         <h1 className='text-4xl font-cairo md:text-[40px] lg:text-5xl font-bold mb-3 mt-14'>About Me</h1>
         <Breadcrumbs
           separator={<p className='text-white'>/</p>}

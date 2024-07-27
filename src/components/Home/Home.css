@@ -1,30 +1,37 @@
 .home-hero-section {
-    background: linear-gradient(270deg, #000419e3, #000207f3), url(../../assets/home-bg-img.jpg);
-    background-size: cover;
-    background-position: 20%;
-    background-repeat: no-repeat;
+  background: linear-gradient(270deg, #0000006b, #000000da), url(../../assets/home-bg-img.jpg);
+  background-size: cover;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+}
+
+/* .home-hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  z-index: 1;
+} */
+
+#name-underline {
+  stroke-dasharray: 428;
+  animation: .8s fillSvg ease-in;
+}
+
+@keyframes fillSvg {
+  0% {
+    stroke-dashoffset: 428;
   }
-  
-  @media screen and (max-width:767px) {
-    .home-hero-section {
-      background: linear-gradient(270deg, #000419e3, #000207f3), url(../../assets/home-sm-bg-img.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+
+  100% {
+    stroke-dashoffset: 0;
   }
-  
-  #name-underline {
-    stroke-dasharray: 428;
-    animation: .8s fillSvg ease-in;
-  }
-  
-  @keyframes fillSvg {
-    0% {
-      stroke-dashoffset: 428;
-    }
-  
-    100% {
-      stroke-dashoffset: 0;
-    }
-  }
+}
+
+.glow {
+  /* color: #44ADF8; Your text color */
+  text-shadow: 0 0 5px #f0f7fc27, 0 0 10px #000000bb, 0 0 15px #44adf81f, 0 0 20px #04a1dfb9, 0 0 30px #0088ff2f, 0 0 40px #0088ff0e, 0 0 50px #0088ff2a;
+}

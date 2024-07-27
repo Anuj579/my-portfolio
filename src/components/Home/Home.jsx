@@ -47,7 +47,7 @@ function Home({ isLoading }) {
         <img src={triangle} alt="triangle" className='absolute left-2/4 bottom-[10%] rotate-[-90deg] animate-rotate-left-right' />
         <div className='container flex flex-wrap md:flex-nowrap justify-between items-center mx-auto my-10 gap-4 px-4'>
           <div className='relative'>
-            <h1 className='text-2xl font-cairo font-semibold tracking-wide'>Hello World! 👋 I am  </h1><span className='text-secondary text-[42px] font-extrabold font-cairo tracking-wide relative sm:whitespace-normal whitespace-nowrap'><svg aria-hidden="true" id="name-underline" viewBox="0 0 297 33" className={`absolute left-0 top-[64%] h-[0.58em] w-full fill-transparent sm:opacity-0  ${waitingTime ? "block" : "hidden"} stroke-[#9fecff4b] stroke-[3.5]`} preserveAspectRatio="none"><path d="M0.999989 20.5C79.5 4.5 85.5 5.5 85.5 5.5C354.5 -9.50001 -56.5262 35.0001 216.5 22.8813C235.5 22.0379 266.931 23.7779 296.5 31" /></svg> <span>Anuj Chaudhary</span></span>
+            <h1 className='text-2xl font-cairo font-semibold tracking-wide'>Hello World! 👋 I am  </h1><span className='text-secondary text-[42px] font-extrabold font-cairo tracking-wide relative sm:whitespace-normal whitespace-nowrap'><svg aria-hidden="true" id="name-underline" viewBox="0 0 297 33" className={`absolute left-0 top-[64%] h-[0.58em] w-full fill-transparent sm:opacity-0  ${waitingTime ? "block" : "hidden"} stroke-[#9fecff4b] stroke-[3.5]`} preserveAspectRatio="none"><path d="M0.999989 20.5C79.5 4.5 85.5 5.5 85.5 5.5C354.5 -9.50001 -56.5262 35.0001 216.5 22.8813C235.5 22.0379 266.931 23.7779 296.5 31" /></svg> <span className='glow'>Anuj Chaudhary</span></span>
             <h2 className='text-3xl font-extrabold tracking-wide text-accent font-cairo my-7'><TypeEffect /></h2>
             <p className='hover:text-secondary fill-white w-max hover:fill-secondary mt-14 transition-all duration-300'>
               <Link to={'/portfolio'} className='learn-more-link flex items-center relative font-medium text-lg'><span>Explore my portfolio</span> <svg xmlns="http://www.w3.org/2000/svg" className='h-[18px] fill-inherit ms-3' viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" /></svg></Link>
@@ -175,7 +175,7 @@ function Home({ isLoading }) {
                   laptopImg={proj1laptop}
                   mobileImg={proj1mobile}
                   title="IceCreamsCorner Web App"
-                  description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with quantity limits, order placement, and order history. Responsive design ensures a seamless experience across devices."
+                  description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices."
                   demoLink="https://anuj459.pythonanywhere.com/"
                   codeLink="https://github.com/Anuj579/IceCreamsCorner_webapp"
                   className='hidden'
@@ -186,7 +186,7 @@ function Home({ isLoading }) {
                   laptopImg={proj2laptop}
                   mobileImg={proj2mobile}
                   title="Time Tracer Website"
-                  description="A web app for tracking time, offering both countdown and elapsed time functionalities. Users can input a target date to view the remaining time or elapsed time in a user-friendly and highly responsive design that adapts seamlessly across various devices."
+                  description="A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design."
                   demoLink="https://timetracer9.netlify.app/"
                   codeLink="https://github.com/Anuj579/TimeTracer"
                   className='hidden'
@@ -201,7 +201,7 @@ function Home({ isLoading }) {
               laptopImg={proj1laptop}
               mobileImg={proj1mobile}
               title="IceCreamsCorner Web App"
-              description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with quantity limits, order placement, and order history. Responsive design ensures a seamless experience across devices."
+              description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices."
               demoLink="https://anuj459.pythonanywhere.com/"
               codeLink="https://github.com/Anuj579/IceCreamsCorner_webapp"
             />
@@ -209,7 +209,7 @@ function Home({ isLoading }) {
               laptopImg={proj2laptop}
               mobileImg={proj2mobile}
               title="Time Tracer Website"
-              description="A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see remaining or elapsed time, with a user-friendly and responsive design."
+              description="A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design."
               demoLink="https://timetracer9.netlify.app/"
               codeLink="https://github.com/Anuj579/TimeTracer"
             />

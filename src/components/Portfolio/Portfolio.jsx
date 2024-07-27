@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import portfolio_bg from '../../assets/portfolio bg.png'
 import proj1laptop from '../../assets/proj1-laptop.png'
 import proj1mobile from '../../assets/proj1-mobile.png'
 import proj2laptop from '../../assets/proj2-laptop.png'
@@ -28,7 +27,7 @@ function Portfolio() {
       laptopImg: proj1laptop,
       mobileImg: proj1mobile,
       title: "IceCreamsCorner Web App",
-      description: "Developed an online ice cream shop using Django. Features include user authentication, shopping cart with quantity limits, order placement, and order history. Responsive design ensures a seamless experience across devices.",
+      description: "Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices.",
       demoLink: "https://anuj459.pythonanywhere.com/",
       codeLink: "https://github.com/Anuj579/IceCreamsCorner_webapp"
     },
@@ -36,7 +35,7 @@ function Portfolio() {
       laptopImg: proj2laptop,
       mobileImg: proj2mobile,
       title: "Time Tracer Website",
-      description: "A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see remaining or elapsed time, with a user-friendly and responsive design.",
+      description: "A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design.",
       demoLink: "https://timetracer9.netlify.app/",
       codeLink: "https://github.com/Anuj579/TimeTracer"
     },
@@ -60,7 +59,7 @@ function Portfolio() {
       laptopImg: proj5laptop,
       mobileImg: proj5mobile,
       title: "User Info Viewer",
-      description: "A React-based app showcasing user details fetched from an API. Features include a list of users with avatars, detailed information in a dialog box, and a custom scrollbar for enhanced UX.",
+      description: "A React-based app showcasing user details fetched from an API. Features include a list of users with avatars, detailed information in a dialog box, and a smooth custom scrollbar for enhanced user experience.",
       demoLink: "https://userinfoviewer.netlify.app/",
       codeLink: "https://github.com/Anuj579/User-info-viewer"
     },
@@ -68,7 +67,7 @@ function Portfolio() {
       laptopImg: proj6laptop,
       mobileImg: proj6mobile,
       title: "Responsive Design",
-      description: "A sleek, responsive website built with React and Bootstrap. Showcases my frontend skills with a clean, professional design and seamless responsiveness across various devices.",
+      description: "A sleek, responsive website built with React and Bootstrap. It showcases my frontend development skills with a clean, professional design and seamless responsiveness across all various devices and screen sizes.",
       demoLink: "https://responsivereactsite.netlify.app/",
       codeLink: "https://github.com/Anuj579/Responsive-react-site"
     },
@@ -86,7 +85,7 @@ function Portfolio() {
 
   return (
     <>
-      <section className='bg-cover bg-center bg-no-repeat min-h-[45vh] md:min-h-[65vh] flex flex-col justify-center items-center shadow-lg shadow-black bg-opacity-80' style={{ backgroundImage: `url(${portfolio_bg})` }}>
+      <section className='portfolio-hero-section relative min-h-[45vh] md:min-h-[65vh] flex flex-col justify-center items-center shadow-lg shadow-black'>
         <h1 className='text-4xl font-cairo md:text-[40px] lg:text-5xl font-bold mb-3 mt-14'>Portfolio</h1>
         <Breadcrumbs separator={<p className='text-white'>/</p>} className='bg-transparent '>
           <Link to="/" className="opacity-60 text-white text-base" style={{ fontWeight: '400' }}>HOME</Link>
