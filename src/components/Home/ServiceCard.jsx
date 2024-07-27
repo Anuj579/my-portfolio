@@ -25,7 +25,7 @@ function ServiceCard({ image, title, description }) {
                 </div>
             </div>
             <Dialog
-                className='bg-[#0c1821]'
+                className='bg-primary border border-[#ffffff25]'
                 open={open}
                 handler={handleOpen}
                 animate={{

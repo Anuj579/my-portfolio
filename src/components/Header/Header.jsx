@@ -52,7 +52,7 @@ function Header() {
             boxSizing: "box-border",
             width: "w-full",
             boxShadow: "shadow-2xl shadow-blue-gray-900/10",
-            backgroundColor: "bg-[#0c1821]"
+            backgroundColor: "bg-primary"
           },
           overlay: {
             position: "fixed",
@@ -73,7 +73,7 @@ function Header() {
 
   return (
     <>
-      <nav className={`p-4 fixed top-0 w-full ${scrolledNavbar && 'bg-[#0c1821] shadow-md shadow-black'} transition-all z-[9999]`}>
+      <nav className={`p-4 fixed top-0 w-full ${scrolledNavbar && 'bg-primary shadow-md shadow-black'} transition-all z-[9999]`}>
         <div className="md:container mx-auto w-full flex justify-between md:justify-between items-center ">
           {/* Logo */}
           <Link to="/">
