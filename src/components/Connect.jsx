@@ -15,7 +15,7 @@ function Connect() {
             <CustomButton
                 text="Send a message"
                 icon={send}
-                className='w-6 h-6'
+                className='w-6'
                 to='/contact'
             />
         </div>
