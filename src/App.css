@@ -114,3 +114,7 @@
 .animate-rotate-left-right {
   animation: rotateLeftRight 18s ease-in-out infinite;
 }
+
+button:focus{
+  opacity: 1 !important;
+}
