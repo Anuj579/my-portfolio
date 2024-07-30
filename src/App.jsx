@@ -21,13 +21,23 @@ export default function App() {
   useScrollToTop();
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setIsLoading(false)
-    }, 1500);
-    return () => clearTimeout(timeout)
-  }, [])
+    let contentLoaded = false;
+    let timer;
 
-  
+    const handleLoad = () => {
+      contentLoaded = true;
+      timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 1500);
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+      clearTimeout(timer);
+    };
+  }, []);
 
   return (
     <>
