@@ -24,3 +24,20 @@
   /* color: #44ADF8; Your text color */
   text-shadow: 0 0 5px #f0f7fc27, 0 0 10px #000000bb, 0 0 15px #44adf81f, 0 0 20px #04a1dfb9, 0 0 30px #0088ff2f, 0 0 40px #0088ff0e, 0 0 50px #0088ff2a;
 }
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.emoji-wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2s infinite;
+}
