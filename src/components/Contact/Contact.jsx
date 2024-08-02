@@ -70,7 +70,7 @@ function Contact() {
           <p className='text-accent'>I'd love to hear from you! Whether you have a project idea, a question about my work, or simply want to connect and say hello, please don’t hesitate to reach out. Drop me a message below, and I'll get back to you as soon as possible.</p>
         </div>
         <div className='flex justify-center'>
-          <div className="contact-form w-full md:w-[550px] rounded-lg border border-[#e7e7e727] bg-primary ">
+          <div className="contact-form w-full md:w-[550px] rounded-lg bg-primary ">
             <div className='bg-[#00000000] rounded-lg p-8'>
               <form onSubmit={handleSubmit}>
                 <div className='flex flex-col gap-8'>
