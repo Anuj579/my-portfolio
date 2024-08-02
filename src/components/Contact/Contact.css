@@ -3,7 +3,7 @@
 }
 
 .contact-hero-section {
-    background: linear-gradient(270deg, #0000005d, #000000ab), url(../../assets/contact-bg.webp);
+    background: linear-gradient(270deg, #0000005d, #000000ab), url(https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/tkmnkcnauavxua5n17kk);
     background-size: cover;
     background-position: center 70%;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 .contact-form {
     box-sizing: border-box;
     background: linear-gradient(-30deg, #010b13, #010b1304);
-    box-shadow: 0 0 15px #0473c215, 0 0 35px #c2d3df17;
+    box-shadow: 0 0 15px #0473c215, 0 0 25px #c2d3df17;
 }
 
 .contact-form form button {
