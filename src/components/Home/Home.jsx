@@ -8,7 +8,6 @@ import 'swiper/css/effect-creative';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import homeIllustration from '../../assets/home-illustration.svg'
 import profile from '../../assets/profile img.png'
 import gradient from '../../assets/radial gradient.png'
 import whitegradient from '../../assets/white radial gradient.png'
@@ -54,7 +53,7 @@ function Home({ isLoading }) {
             </p>
           </div>
           <div>
-            <img src={homeIllustration} className='h-[300px] md:h-[400px] mt-10 md:mt-0' alt="homepage-illustration" />
+            <img src='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/u8g7elqqmc3ogww8lkg3' className='h-[300px] md:h-[400px] mt-10 md:mt-0' alt="homepage-illustration" />
           </div>
         </div>
       </section>
