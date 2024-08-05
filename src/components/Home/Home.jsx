@@ -67,9 +67,10 @@ function Home({ isLoading }) {
           </div>
           <div className='flex flex-col md:flex-row gap-16 items-center'>
             <div>
-              <p className='text-accent'>My journey into the world of programming has been a thrilling ride of continuous learning and discovery. I have honed my skills in HTML, CSS, JavaScript, and Python, and I am actively expanding my knowledge in frameworks like React JS and Django.</p><br />
-              <p className='text-accent'>I love building dynamic and responsive web applications that provide seamless user experiences. From front-end design to back-end logic, I enjoy the challenge of creating efficient and elegant solutions.</p><br />
-              <p className='text-accent'>My interests also include exploring new technologies and frameworks, always aiming to expand my expertise and keep up with the latest trends in web development. Whether it's creating interactive user interfaces or developing robust back-end systems, I am passionate about bringing ideas to life through code.</p>
+              <p className='text-accent'>My journey in programming has been a thrilling ride of learning and discovery. I’ve developed skills in HTML, CSS, JavaScript, and Python, and I’m expanding my expertise in React JS and Django.</p><br />
+              <p className='text-accent'>I enjoy building dynamic web applications that offer smooth user experiences. From front-end design to back-end logic, I take pleasure in creating efficient and elegant solutions.</p><br />
+              <p className='text-accent'>I’m keen on exploring new technologies and frameworks, staying updated with trends in web development. Whether it’s interactive UIs or robust back-end systems, I’m passionate about turning ideas into reality through code.</p>
+
             </div>
             <div className='relative w-full flex justify-center'>
               <img src={profile} alt="profile-img" className='h-52 z-10' />
@@ -85,7 +86,7 @@ function Home({ isLoading }) {
             <h1 className='font-cairo font-bold text-4xl mt-10 text-center'>What Can I Do <span className='whitespace-nowrap'>For You</span></h1>
             <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent '>Explore my expertise and discover how I can help bring your projects to life. With a solid foundation in web development, I offer a blend of creative and technical skills. Whether you need a visually appealing UI/UX design, efficient frontend development with React.js, or robust backend solutions using Python and Django, I am here to support your project. My aim is to create seamless digital experiences that exceed your expectations. Let's collaborate to turn your ideas into reality.</p>
+          <p className='text-accent '>Discover how I can bring your projects to life. With expertise in web development, I offer a blend of creative UI/UX design, efficient frontend development with React.js, and robust backend solutions using Python and Django. Let's collaborate to turn your ideas into reality.</p>
           {/* For smaller screens */}
           <div className="md:hidden mt-14">
             <Swiper
@@ -146,7 +147,7 @@ function Home({ isLoading }) {
             <h1 className='font-cairo font-bold text-4xl mt-10 text-center'>Highlighted Creations</h1>
             <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent mb-6'>Explore my top projects, crafted with passion and creativity, just for you. These highlighted creations showcase my dedication to delivering high-quality web solutions. From innovative UI/UX designs to complex frontend and backend developments, each project demonstrates my ability to bring ideas to life through meticulous attention to detail and cutting-edge technology. Dive into my portfolio to see how I combine aesthetic appeal with functionality to create impactful digital experiences.</p>
+          <p className='text-accent mb-12'>Explore my top projects, crafted with creativity and precision. Each highlights my expertise in UI/UX design and web development, showcasing how I blend aesthetics with functionality. Check out my portfolio to see these impactful digital creations.</p>
 
           {/* Project card for smaller screens */}
           <div className='md:hidden my-10'>

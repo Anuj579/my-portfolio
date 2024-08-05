@@ -43,10 +43,9 @@ function About() {
             <h1 className='font-cairo font-bold text-4xl text-center mt-10'>Know Who I Am</h1>
             <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent'>Hi, I'm Anuj Chaudhary, a passionate web developer based in Haryana, India, with a knack for creating engaging and interactive websites. My journey in web development started with a keen interest in technology, which has now grown into a full-fledged passion for coding and designing.</p><br />
-          <p className='text-accent'>Currently pursuing my BCA through online education, I am dedicated to expanding my knowledge and expertise in both front-end and back-end development.</p><br />
-          <p className='text-accent'>When I'm not coding, I enjoy exploring new design trends and staying updated with the latest in tech. I love listening to music, which helps me relax and stay inspired. Additionally, playing video games is one of my favorite pastimes, offering a fun way to unwind and spark creativity.</p><br />
-          <p className='text-accent'>Through continuous learning and hands-on experience, I aim to push the boundaries of what's possible in web development and bring innovative ideas to life.</p>
+          <p className='text-accent'>Hi, I'm Anuj Chaudhary, a web developer from Haryana, India. I create engaging and interactive websites with a passion for coding. Currently pursuing a BCA online, I’m deeply focused on both front-end and back-end development to enhance my skills.</p><br />
+          <p className='text-accent'>Beyond coding, I enjoy exploring design trends, listening to music, and playing video games, which help me stay creative and inspired. These hobbies keep me motivated and refreshed.</p><br />
+          <p className='text-accent'>Committed to continuous learning, I strive to push the boundaries of web development and turn innovative ideas into reality, delivering high-quality solutions for diverse projects.</p>
         </div>
 
         {/* Areas of Expertise div */}
@@ -55,7 +54,7 @@ function About() {
             <h1 className='font-cairo font-bold text-4xl text-center mt-10'>Areas of Expertise</h1>
             <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent'>I have honed a diverse skill set through rigorous education and hands-on experience in various projects. My expertise spans multiple domains, enabling me to tackle complex challenges effectively. Below are some key areas where I excel, showcasing my ability to deliver high-quality results.</p>
+          <p className='text-accent'>I’ve built a diverse skill set through education and hands-on projects. My expertise spans several areas, allowing me to tackle complex challenges effectively. Here are key areas where I excel and deliver high-quality results.</p>
           <div className='flex flex-wrap justify-center gap-12 my-14'>
             <Tooltip
               content="HTML"
@@ -132,7 +131,7 @@ function About() {
             <h1 className='font-cairo font-bold text-4xl text-center mt-10'>Tools I play With</h1>
             <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent'>I leverage a variety of powerful tools to streamline my workflow and enhance productivity. From coding and design to version control and content management, these tools play a pivotal role in my development process. Here are a few key tools I frequently use: WordPress for robust content management, Figma for intuitive design and prototyping, Visual Studio Code for efficient coding, and GitHub for seamless version control and collaboration.</p>
+          <p className='text-accent'>I use various tools to streamline my workflow and boost productivity. Key tools include WordPress for content management, Figma for design and prototyping, Visual Studio Code for coding, and GitHub for version control and collaboration.</p>
           <div className='flex flex-wrap justify-center gap-12 my-14'>
             <Tooltip
               content="WordPress"
@@ -175,7 +174,7 @@ function About() {
             <h1 className='font-cairo font-bold text-4xl text-center'>Education and Certifications</h1>
             <hr className='border-b-4 border-secondary w-48 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent'>My formal education and additional certifications have equipped me with a solid foundation in web development. From mastering the basics to advanced concepts, I've gained valuable skills and knowledge that are crucial for creating effective and efficient web applications. These academic achievements and professional credentials reflect my commitment to continuous learning and excellence in the field.</p>
+          <p className='text-accent'>My education and certifications provide a strong foundation in web development. From basic to advanced skills, these achievements showcase my dedication to learning and expertise in creating effective web applications.</p>
           <div className='flex justify-center md:gap-20 flex-col md:flex-row mt-10'>
             <div className='mb-5'>
               <h2 className='font-cairo text-2xl font-semibold border-b-4 border-secondary w-max'>Education:</h2>

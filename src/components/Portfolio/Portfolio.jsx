@@ -98,7 +98,7 @@ function Portfolio() {
             <h1 className='font-cairo font-bold text-4xl text-center mt-10'>My Recent Works</h1>
             <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
-          <p className='text-accent'>Welcome to my portfolio! Here you'll find a selection of my recent projects, showcasing my skills in web development and design. From sleek, responsive websites to interactive applications, each project reflects my commitment to quality and innovation. I invite you to explore my work and see how I can bring your ideas to life.</p>
+          <p className='text-accent'>Explore my portfolio to see a selection of recent projects that highlight my web development and design skills. Each project showcases my commitment to quality and innovation. Check out my work to see how I can bring your ideas to life.</p>
           <div className='flex justify-center items-center flex-wrap gap-20 my-16'>
             {visibleProjects.map((project, index) => (
               <ProjectCard
