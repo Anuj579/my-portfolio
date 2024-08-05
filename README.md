@@ -2,39 +2,54 @@
 
 Welcome to my portfolio website! This project showcases my skills and experience as a web developer. It features a variety of pages and functionalities to give you an insight into my work and expertise.
 
-## Pages
+<div align="center">
+  <img alt="Demo" src="./Screenshot/screenshot.png" />
+</div>
 
-- **Home**: A welcoming hero section with a background image and greeting.
-- **About**: Information about my background, journey, and interests.
-- **Portfolio**: A collection of my projects with detailed descriptions and images.
-- **Contact**: A form for visitors to get in touch with me.
+## Live Demo
 
-## Features
-
-- **Hero Sections**: Each page includes a hero section with a visually engaging background.
-- **Loader**: An animated loader that appears while the content is loading.
-- **NotFound Page**: A custom 404 page for handling invalid URLs.
-- **Project Cards**: Cards displaying project details with responsive images.
-- **Responsive Design**: Optimized for both mobile and desktop views.
-- **SEO and Performance**: Techniques to enhance website performance and search engine visibility.
+You can view the live version of my portfolio website [here](https://anujchaudhary.netlify.app/).
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript, React.js
-- **Backend**: Django (for any backend needs)
-- **Tools**: Visual Studio Code, GitHub, Figma
+- **HTML**
+- **CSS**
+- **Tailwind CSS**
+- **React.js**
+- **Material Tailwind**
+- **Vite** (for development and build)
 
-## Deployment
+## Features
 
-The website is deployed on Netlify. You can access it [here](https://anujchaudhary.netlify.app/).
+- **Responsive Design:** The website is designed to be responsive and work seamlessly across various devices.
+- **Dynamic Pages:** Includes pages such as Home, About, Portfolio, and Contact.
+- **Project Showcase:** Features a section to display recent projects with interactive elements.
+- **Hero Sections:** Each page has a custom hero section with background images and animations.
+- **Loader Animation:** A custom loader is shown during page transitions to enhance the user experience.
+- **Not Found Page:** A custom 404 page is displayed for invalid URLs.
 
-## Contributing
 
-Feel free to fork the repository and submit pull requests. If you have any suggestions or find any issues, please open an issue on GitHub.
+## Installation
 
+To run this project locally, follow these steps:
 
-## Acknowledgements
+1. Clone the repository:
 
-- [Netlify](https://www.netlify.com/) for hosting
-- [Vite](https://vitejs.dev/) for fast development
-- [TinyPNG](https://tinypng.com/) for image optimization
+   ```bash
+   git clone https://github.com/Anuj579/My-Portfolio.git
+
+2. Navigate to the project directory:
+   
+   ```bash
+   cd My-Portfolio
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+
