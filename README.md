@@ -1,4 +1,4 @@
-# My Portfolio Website
+# 🌟 My Portfolio Website
 
 Welcome to my portfolio website! This project showcases my skills and experience as a web developer. It features a variety of pages and functionalities to give you an insight into my work and expertise.
 
@@ -6,11 +6,11 @@ Welcome to my portfolio website! This project showcases my skills and experience
   <img alt="Demo" src="./Screenshot/screenshot.png" />
 </div>
 
-## Live Demo
+## 🚀 Live Demo
 
 You can view the live version of my portfolio website [here](https://anujchaudhary.netlify.app/).
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 - **HTML**
 - **CSS**
@@ -19,7 +19,7 @@ You can view the live version of my portfolio website [here](https://anujchaudha
 - **Material Tailwind**
 - **Vite** (for development and build)
 
-## Features
+## ✨ Features
 
 - **Responsive Design:** The website is designed to be responsive and work seamlessly across various devices.
 - **Dynamic Pages:** Includes pages such as Home, About, Portfolio, and Contact.
@@ -28,8 +28,12 @@ You can view the live version of my portfolio website [here](https://anujchaudha
 - **Loader Animation:** A custom loader is shown during page transitions to enhance the user experience.
 - **Not Found Page:** A custom 404 page is displayed for invalid URLs.
 
+## 📷 Image Optimization
 
-## Installation
+- **CDN Usage:** I'm using [Cloudinary](https://cloudinary.com/) for image delivery, which ensures faster loading times and optimized image formats.
+- **Assets Management:** All assets used in the website are stored in the `assets` folder for easy management and organization.
+
+## 🛠️ Installation
 
 To run this project locally, follow these steps:
 
