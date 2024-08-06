@@ -9,15 +9,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import profile from '../../assets/profile img.png'
-import gradient from '../../assets/radial gradient.png'
-import whitegradient from '../../assets/white radial gradient.png'
-import uiux from '../../assets/ui-ux.jpg'
-import frontend from '../../assets/frontend.jpg'
-import backend from '../../assets/backend.jpg'
-import proj1laptop from '../../assets/proj1-laptop.webp'
-import proj1mobile from '../../assets/proj1-mobile.webp'
-import proj2laptop from '../../assets/proj2-laptop.webp'
-import proj2mobile from '../../assets/proj2-mobile.webp'
+import gradient from '../../assets/radial gradient.webp'
+import whitegradient from '../../assets/white radial gradient.webp'
 import triangle from '../../assets/triangle.svg'
 import zigzagLine from '../../assets/zigzag-line.svg'
 import { Link } from 'react-router-dom'
@@ -99,21 +92,21 @@ function Home({ isLoading }) {
             >
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ServiceCard
-                  image={uiux}
+                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/uiux'
                   title="UI/UX Design"
                   description="Crafting visually appealing and user-friendly designs that provide a seamless and engaging user experience."
                 />
               </SwiperSlide>
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ServiceCard
-                  image={frontend}
+                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/frontend'
                   title="Front-End Development"
                   description="Crafting dynamic and responsive websites using HTML, CSS, JavaScript, and modern frameworks like React.js, Bootstrap, and Tailwind CSS."
                 />
               </SwiperSlide>
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ServiceCard
-                  image={backend}
+                  image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/backend'
                   title="Back-End Development"
                   description="Developing robust and scalable backend systems using Django, ensuring your website performs efficiently and securely."
                 />
@@ -124,17 +117,17 @@ function Home({ isLoading }) {
           {/* For larger screens */}
           <div className='hidden md:flex justify-center items-center flex-row gap-14 flex-wrap mt-14'>
             <ServiceCard
-              image={uiux}
+              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/uiux'
               title="UI/UX Design"
               description="Crafting visually appealing and user-friendly designs that provide a seamless and engaging user experience."
             />
             <ServiceCard
-              image={frontend}
+              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/frontend'
               title="Front-End Development"
               description="Crafting dynamic and responsive websites using HTML, CSS, JavaScript, and modern frameworks like React.js, Bootstrap, and Tailwind CSS."
             />
             <ServiceCard
-              image={backend}
+              image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/backend'
               title="Back-End Development"
               description="Developing robust and scalable backend systems using Django, ensuring your website performs efficiently and securely."
             />
@@ -172,8 +165,8 @@ function Home({ isLoading }) {
             >
               <SwiperSlide className='justify-center items-center' style={{ display: 'flex' }}>
                 <ProjectCard
-                  laptopImg={proj1laptop}
-                  mobileImg={proj1mobile}
+                  laptopImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1laptop'
+                  mobileImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1mob'
                   title="IceCreamsCorner Web App"
                   description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices."
                   demoLink="https://anuj459.pythonanywhere.com/"
@@ -183,8 +176,8 @@ function Home({ isLoading }) {
               </SwiperSlide>
               <SwiperSlide className='justify-center items-center' style={{ display: 'flex' }}>
                 <ProjectCard
-                  laptopImg={proj2laptop}
-                  mobileImg={proj2mobile}
+                  laptopImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2laptop'
+                  mobileImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2mob'
                   title="Time Tracer Website"
                   description="A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design."
                   demoLink="https://timetracer9.netlify.app/"
@@ -198,16 +191,16 @@ function Home({ isLoading }) {
           {/* Project card for larger screens */}
           <div className='hidden md:flex md:flex-wrap justify-center items-center gap-20'>
             <ProjectCard
-              laptopImg={proj1laptop}
-              mobileImg={proj1mobile}
+              laptopImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1laptop'
+              mobileImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1mob'
               title="IceCreamsCorner Web App"
               description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices."
               demoLink="https://anuj459.pythonanywhere.com/"
               codeLink="https://github.com/Anuj579/IceCreamsCorner_webapp"
             />
             <ProjectCard
-              laptopImg={proj2laptop}
-              mobileImg={proj2mobile}
+              laptopImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2laptop'
+              mobileImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2mob'
               title="Time Tracer Website"
               description="A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design."
               demoLink="https://timetracer9.netlify.app/"

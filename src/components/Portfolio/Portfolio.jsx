@@ -1,18 +1,4 @@
 import React, { useState } from 'react'
-import proj1laptop from '../../assets/proj1-laptop.webp'
-import proj1mobile from '../../assets/proj1-mobile.webp'
-import proj2laptop from '../../assets/proj2-laptop.webp'
-import proj2mobile from '../../assets/proj2-mobile.webp'
-import proj3laptop from '../../assets/proj3-laptop.webp'
-import proj3mobile from '../../assets/proj3-mobile.webp'
-import proj4laptop from '../../assets/proj4-laptop.webp'
-import proj4mobile from '../../assets/proj4-mobile.webp'
-import proj5laptop from '../../assets/proj5-laptop.webp'
-import proj5mobile from '../../assets/proj5-mobile.webp'
-import proj6laptop from '../../assets/proj6-laptop.webp'
-import proj6mobile from '../../assets/proj6-mobile.webp'
-import proj7laptop from '../../assets/proj7-laptop.webp'
-import proj7mobile from '../../assets/proj7-mobile.webp'
 import { Breadcrumbs } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 import ProjectCard from './ProjectCard';
@@ -24,56 +10,56 @@ function Portfolio() {
 
   const projects = [
     {
-      laptopImg: proj1laptop,
-      mobileImg: proj1mobile,
+      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1laptop',
+      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1mob',
       title: "IceCreamsCorner Web App",
       description: "Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices.",
       demoLink: "https://anuj459.pythonanywhere.com/",
       codeLink: "https://github.com/Anuj579/IceCreamsCorner_webapp"
     },
     {
-      laptopImg: proj2laptop,
-      mobileImg: proj2mobile,
+      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2laptop',
+      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2mob',
       title: "Time Tracer Website",
       description: "A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design.",
       demoLink: "https://timetracer9.netlify.app/",
       codeLink: "https://github.com/Anuj579/TimeTracer"
     },
     {
-      laptopImg: proj3laptop,
-      mobileImg: proj3mobile,
+      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj3laptop',
+      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj3mob',
       title: "Tax Calculator",
       description: "A web app for calculating income after tax deductions. Input your gross income, extra income, and age group to get accurate results, displayed in INR. Includes user-friendly error handling and supports multiple tax rates.",
       demoLink: "https://taxcalculator99.netlify.app/",
       codeLink: "https://github.com/Anuj579/Tax-calculator"
     },
     {
-      laptopImg: proj4laptop,
-      mobileImg: proj4mobile,
+      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj4laptop',
+      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj4mob',
       title: "Todo App",
       description: "An intuitive Todo application allowing easy theme switching between light and dark modes. It lets you add, edit, and delete tasks with the ability to manage multiple items simultaneously and clear selected tasks with a single click.",
       demoLink: "https://mytodoapp9.netlify.app/",
       codeLink: "https://github.com/Anuj579/ToDo-App-ReactJS"
     },
     {
-      laptopImg: proj5laptop,
-      mobileImg: proj5mobile,
+      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj5laptop',
+      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj5mob',
       title: "User Info Viewer",
       description: "A React-based app showcasing user details fetched from an API. Features include a list of users with avatars, detailed information in a dialog box, and a smooth custom scrollbar for enhanced user experience.",
       demoLink: "https://userinfoviewer.netlify.app/",
       codeLink: "https://github.com/Anuj579/User-info-viewer"
     },
     {
-      laptopImg: proj6laptop,
-      mobileImg: proj6mobile,
+      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj6laptop',
+      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj6mob',
       title: "Responsive Design",
       description: "A sleek, responsive website built with React and Bootstrap. It showcases my frontend development skills with a clean, professional design and seamless responsiveness across all various devices and screen sizes.",
       demoLink: "https://responsivereactsite.netlify.app/",
       codeLink: "https://github.com/Anuj579/Responsive-react-site"
     },
     {
-      laptopImg: proj7laptop,
-      mobileImg: proj7mobile,
+      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj7laptop',
+      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj7mob',
       title: "Demo UI Design",
       description: "A professionally designed, responsive website created to highlight front-end development skills. This project utilizes HTML, CSS, and Bootstrap to deliver a visually appealing and functional design.",
       demoLink: "https://atgworldui.netlify.app/",
