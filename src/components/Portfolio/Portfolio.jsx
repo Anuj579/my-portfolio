@@ -26,6 +26,14 @@ function Portfolio() {
       codeLink: "https://github.com/Anuj579/TimeTracer"
     },
     {
+      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/movieapp-laptop',
+      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/movieapp-mob',
+      title: "Movie Search App",
+      description: "A movie search application that lets users quickly find movies by title. Featuring responsive design, Bootstrap integration, and dynamic API-driven content with smooth loading states for a clean, user-friendly experience.",
+      demoLink: "https://quickmoviesearch.netlify.app/",
+      codeLink: "https://github.com/Anuj579/movie-search-app"
+    },
+    {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj3laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj3mob',
       title: "Tax Calculator",
