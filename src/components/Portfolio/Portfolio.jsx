@@ -10,6 +10,14 @@ function Portfolio() {
 
   const projects = [
     {
+      laptopImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-laptop',
+      mobileImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-mobile',
+      title: "NoteWorthy Web App",
+      description: "Built a full-stack note-taking platform using Django and React. Features user authentication, profile management, theme toggling, search functionality, and CRUD operations. Fully responsive for all devices.",
+      demoLink: "https://noteworthyonline.netlify.app/",
+      codeLink: "https://github.com/Anuj579/notes-app-frontend-react"
+    },
+    {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1mob',
       title: "IceCreamsCorner Web App",

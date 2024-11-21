@@ -7,7 +7,7 @@ import CustomButton from '../CustomButton';
 function ProjectCard({ laptopImg, mobileImg, title, description, demoLink, codeLink, className }) {
     return (
         <div className='rounded-md relative pt-8 pb-16 md:pb-10 mt-14 w-[340px] bg-[#010b139f] border border-[#ffffff25] md:shadow-custom-card'>
-            <img src={gradient} alt="gradient" className={`absolute -top-28 w-96 ${className}`} />
+            <img src={gradient} alt="gradient" className={`absolute -top-28 w-96 hidden md:block ${className}`} />
             <div className='relative -top-16'>
                 <img src={laptopImg} alt="project-screenshot-laptop"/>
                 <img src={mobileImg} alt="project-screenshot-mobile" className='h-44 absolute  top-10 right-0'/>
