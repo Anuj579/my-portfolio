@@ -17,6 +17,7 @@ export default withMT({
         tailwindColor:'#38B2AC',
         bootstrapColor:'#6F2CF5',
         reactColor:'#61DAFB',
+        nextJsColor: '#444444',
         pythonColor:'#3776AB',
         djangoColor:'#0C4B33',
         wordpressColor: '#087AA0',

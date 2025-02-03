@@ -10,6 +10,14 @@ function Portfolio() {
 
   const projects = [
     {
+      laptopImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-laptop',
+      mobileImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-mobile',
+      title: "BlogOp",
+      description: "Developed a full-stack blog platform with Next.js and MongoDB. Features user authentication, dynamic blog creation, and a custom rich text editor. Fully responsive for all devices.",
+      demoLink: "https://blogop.vercel.app/",
+      codeLink: "https://github.com/Anuj579/blog-op"
+    },
+    {
       laptopImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-laptop',
       mobileImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-mobile',
       title: "NoteWorthy Web App",
@@ -58,28 +66,12 @@ function Portfolio() {
       codeLink: "https://github.com/Anuj579/ToDo-App-ReactJS"
     },
     {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj5laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj5mob',
-      title: "User Info Viewer",
-      description: "A React-based app showcasing user details fetched from an API. Features include a list of users with avatars, detailed information in a dialog box, and a smooth custom scrollbar for enhanced user experience.",
-      demoLink: "https://userinfoviewer.netlify.app/",
-      codeLink: "https://github.com/Anuj579/User-info-viewer"
-    },
-    {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj6laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj6mob',
       title: "Responsive Design",
       description: "A sleek, responsive website built with React and Bootstrap. It showcases my frontend development skills with a clean, professional design and seamless responsiveness across all various devices and screen sizes.",
       demoLink: "https://responsivereactsite.netlify.app/",
       codeLink: "https://github.com/Anuj579/Responsive-react-site"
-    },
-    {
-      laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj7laptop',
-      mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj7mob',
-      title: "Demo UI Design",
-      description: "A professionally designed, responsive website created to highlight front-end development skills. This project utilizes HTML, CSS, and Bootstrap to deliver a visually appealing and functional design.",
-      demoLink: "https://atgworldui.netlify.app/",
-      codeLink: "https://github.com/Anuj579/ATG-World-UI-design"
     },
   ];
 
@@ -101,7 +93,9 @@ function Portfolio() {
             <hr className='border-b-4 border-secondary w-40 mt-3 mb-14 mx-auto md:mx-0' />
           </div>
           <p className='text-accent'>Explore my portfolio to see a selection of recent projects that highlight my web development and design skills. Each project showcases my commitment to quality and innovation. Check out my work to see how I can bring your ideas to life.</p>
+          {/* <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-center items-center gap-20 my-16'> */}
           <div className='flex justify-center items-center flex-wrap gap-20 my-16'>
+
             {visibleProjects.map((project, index) => (
               <ProjectCard
                 key={index}

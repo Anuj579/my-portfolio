@@ -8,6 +8,7 @@ import jsIcon from '../../assets/js-logo.svg';
 import tailwindIcon from '../../assets/tailwind-logo.svg';
 import bootstrapIcon from '../../assets/bootstrap-logo.svg';
 import reactIcon from '../../assets/react-logo.svg';
+import nextIcon from '../../assets/next-logo.svg';
 import pythonIcon from '../../assets/python-logo.svg';
 import djangoIcon from '../../assets/django-logo.svg';
 import wordpressIcon from '../../assets/wordpress-logo.svg';
@@ -104,6 +105,14 @@ function About() {
                 unmount: { scale: 0, y: 25 },
               }}>
               <div><SkillBox icon={reactIcon} className='bg-reactColor border-reactColor' /></div>
+            </Tooltip>
+            <Tooltip
+              content="Next JS"
+              animate={{
+                mount: { scale: 1, y: 0 },
+                unmount: { scale: 0, y: 25 },
+              }}>
+              <div><SkillBox icon={nextIcon} className='bg-nextJsColor border-nextJsColor' /></div>
             </Tooltip>
             <Tooltip
               content="Python"

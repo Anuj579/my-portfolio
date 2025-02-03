@@ -165,6 +165,16 @@ function Home({ isLoading }) {
             >
               <SwiperSlide className='justify-center items-center' style={{ display: 'flex' }}>
                 <ProjectCard
+                  laptopImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-laptop'
+                  mobileImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-mobile'
+                  title="BlogOp"
+                  description="Developed a full-stack blog platform with Next.js and MongoDB. Features user authentication, dynamic blog creation, and a custom rich text editor. Fully responsive for all devices."
+                  demoLink="https://blogop.vercel.app/"
+                  codeLink="https://github.com/Anuj579/blog-op"
+                />
+              </SwiperSlide>
+              <SwiperSlide className='justify-center items-center' style={{ display: 'flex' }}>
+                <ProjectCard
                   laptopImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-laptop'
                   mobileImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-mobile'
                   title="NoteWorthy Web App"
@@ -173,21 +183,19 @@ function Home({ isLoading }) {
                   codeLink="https://github.com/Anuj579/notes-app-frontend-react"
                 />
               </SwiperSlide>
-              <SwiperSlide className='justify-center items-center' style={{ display: 'flex' }}>
-                <ProjectCard
-                  laptopImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1laptop'
-                  mobileImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1mob'
-                  title="IceCreamsCorner Web App"
-                  description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices."
-                  demoLink="https://anuj459.pythonanywhere.com/"
-                  codeLink="https://github.com/Anuj579/IceCreamsCorner_webapp"
-                />
-              </SwiperSlide>
             </Swiper>
           </div>
 
           {/* Project card for larger screens */}
           <div className='hidden md:flex md:flex-wrap justify-center items-center gap-20'>
+            <ProjectCard
+              laptopImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-laptop'
+              mobileImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-mobile'
+              title="BlogOp"
+              description="Developed a full-stack blog platform with Next.js and MongoDB. Features user authentication, dynamic blog creation, and a custom rich text editor. Fully responsive for all devices."
+              demoLink="https://blogop.vercel.app/"
+              codeLink="https://github.com/Anuj579/blog-op"
+            />
             <ProjectCard
               laptopImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-laptop'
               mobileImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-mobile'
@@ -195,14 +203,6 @@ function Home({ isLoading }) {
               description="Built a full-stack note-taking platform using Django and React. Features user authentication, profile management, theme toggling, search functionality, and CRUD operations. Fully responsive for all devices."
               demoLink="https://noteworthyonline.netlify.app/"
               codeLink="https://github.com/Anuj579/notes-app-frontend-react"
-            />
-            <ProjectCard
-              laptopImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1laptop'
-              mobileImg='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1mob'
-              title="IceCreamsCorner Web App"
-              description="Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices."
-              demoLink="https://anuj459.pythonanywhere.com/"
-              codeLink="https://github.com/Anuj579/IceCreamsCorner_webapp"
             />
           </div>
         </div>
