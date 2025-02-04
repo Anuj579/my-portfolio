@@ -101,14 +101,14 @@ function Home({ isLoading }) {
                 <ServiceCard
                   image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/frontend'
                   title="Front-End Development"
-                  description="Crafting dynamic and responsive websites using HTML, CSS, JavaScript, and modern frameworks like React.js, Bootstrap, and Tailwind CSS."
+                  description="Crafting dynamic and responsive websites using HTML, CSS, JavaScript, and modern frameworks like React.js, Next.js, and Tailwind CSS."
                 />
               </SwiperSlide>
               <SwiperSlide className='justify-center' style={{ display: 'flex' }}>
                 <ServiceCard
                   image='https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/backend'
                   title="Back-End Development"
-                  description="Developing robust and scalable backend systems using Django, ensuring your website performs efficiently and securely."
+                  description="Developing robust and scalable backend systems using Django and Django rest framework, ensuring your website performs efficiently and securely."
                 />
               </SwiperSlide>
             </Swiper>
