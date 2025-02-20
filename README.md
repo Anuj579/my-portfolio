@@ -42,18 +42,33 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/Anuj579/My-Portfolio.git
 
+   ```
+
 2. Navigate to the project directory:
-   
+
    ```bash
    cd My-Portfolio
+
+   ```
 
 3. Install dependencies:
 
    ```bash
    npm install
 
+   ```
+
 4. Start the development server:
 
    ```bash
    npm run dev
+   ```
 
+## 📱 Social Media
+
+- [Twitter](https://x.com/anujbuilds)
+- [LinkedIn](https://www.linkedin.com/in/anujchaudhary549/)
+- [YouTube](https://www.youtube.com/@anujbuilds)
+- [Instagram](https://www.instagram.com/anujbuilds)
+
+Developed with ❤️ by Anuj
