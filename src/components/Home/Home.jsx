@@ -19,17 +19,14 @@ import ProjectCard from '../Portfolio/ProjectCard'
 import Connect from '../Connect'
 import TypeEffect from './TypeEffect';
 
-function Home({ isLoading }) {
+function Home() {
   const [waitingTime, setWaitingTime] = useState(false)
 
   useEffect(() => {
-    if (!isLoading) {
       setTimeout(() => {
         setWaitingTime(true)
-      }, 1800);
-    }
+      }, 500);
   }, [])
-
 
   return (
     <>
