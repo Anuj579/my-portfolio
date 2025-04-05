@@ -34,6 +34,14 @@ function Portfolio() {
       codeLink: "https://github.com/Anuj579/IceCreamsCorner_webapp"
     },
     {
+      laptopImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/v1743868758/melodift-laptop_unknmv.png',
+      mobileImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/v1743868758/melodift-mobile_khmbnv.png',
+      title: "Melodift",
+      description: "An online music converter that transforms any song into a relaxing lofi version. Upload your track to instantly generate chill lofi vibes, with download support and a smooth, responsive UI built using modern web technologies.",
+      demoLink: "https://melodift.up.railway.app/",
+      codeLink: "https://github.com/Anuj579/melodift"
+    },
+    {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2mob',
       title: "Time Tracer Website",
