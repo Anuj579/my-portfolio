@@ -23,9 +23,9 @@ function Home() {
   const [waitingTime, setWaitingTime] = useState(false)
 
   useEffect(() => {
-      setTimeout(() => {
-        setWaitingTime(true)
-      }, 500);
+    setTimeout(() => {
+      setWaitingTime(true)
+    }, 500);
   }, [])
 
   return (
@@ -165,7 +165,8 @@ function Home() {
                   laptopImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-laptop'
                   mobileImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-mobile'
                   title="BlogOp"
-                  description="Developed a full-stack blog platform with Next.js and MongoDB. Features user authentication, dynamic blog creation, and a custom rich text editor. Fully responsive for all devices."
+                  techStack={["Next.js", "Tailwind CSS", "MongoDB", "NextAuth"]}
+                  description="Developed a full-stack blog platform with Next.js and MongoDB. Features secure user authentication, dynamic blog creation, a custom rich text editor, and fully responsive design for all devices."
                   demoLink="https://blogop.vercel.app/"
                   codeLink="https://github.com/Anuj579/blog-op"
                 />
@@ -175,6 +176,7 @@ function Home() {
                   laptopImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-laptop'
                   mobileImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-mobile'
                   title="NoteWorthy Web App"
+                  techStack={["React.js", "Tailwind CSS", "Django Rest"]}
                   description="Built a full-stack note-taking platform using Django and React. Features user authentication, profile management, theme toggling, search functionality, and CRUD operations. Fully responsive for all devices."
                   demoLink="https://noteworthyonline.netlify.app/"
                   codeLink="https://github.com/Anuj579/notes-app-frontend-react"
@@ -189,7 +191,8 @@ function Home() {
               laptopImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-laptop'
               mobileImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-mobile'
               title="BlogOp"
-              description="Developed a full-stack blog platform with Next.js and MongoDB. Features user authentication, dynamic blog creation, and a custom rich text editor. Fully responsive for all devices."
+              techStack={["Next.js", "Tailwind CSS", "MongoDB", "NextAuth"]}
+              description="Developed a full-stack blog platform with Next.js and MongoDB. Features secure user authentication, dynamic blog creation, a custom rich text editor, and fully responsive design for all devices."
               demoLink="https://blogop.vercel.app/"
               codeLink="https://github.com/Anuj579/blog-op"
             />
@@ -197,6 +200,7 @@ function Home() {
               laptopImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-laptop'
               mobileImg='https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-mobile'
               title="NoteWorthy Web App"
+              techStack={["React.js", "Tailwind CSS", "Django Rest"]}
               description="Built a full-stack note-taking platform using Django and React. Features user authentication, profile management, theme toggling, search functionality, and CRUD operations. Fully responsive for all devices."
               demoLink="https://noteworthyonline.netlify.app/"
               codeLink="https://github.com/Anuj579/notes-app-frontend-react"

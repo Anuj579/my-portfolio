@@ -13,7 +13,8 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-laptop',
       mobileImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/blogapp-mobile',
       title: "BlogOp",
-      description: "Developed a full-stack blog platform with Next.js and MongoDB. Features user authentication, dynamic blog creation, and a custom rich text editor. Fully responsive for all devices.",
+      techStack: ["Next.js", "Tailwind CSS", "MongoDB", "NextAuth"],
+      description: "Developed a full-stack blog platform with Next.js and MongoDB. Features secure user authentication, dynamic blog creation, a custom rich text editor, and fully responsive design for all devices.",
       demoLink: "https://blogop.vercel.app/",
       codeLink: "https://github.com/Anuj579/blog-op"
     },
@@ -21,6 +22,7 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-laptop',
       mobileImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/f_auto,q_auto/noteapp-mobile',
       title: "NoteWorthy Web App",
+      techStack: ["React.js", "Tailwind CSS", "Django Rest"],
       description: "Built a full-stack note-taking platform using Django and React. Features user authentication, profile management, theme toggling, search functionality, and CRUD operations. Fully responsive for all devices.",
       demoLink: "https://noteworthyonline.netlify.app/",
       codeLink: "https://github.com/Anuj579/notes-app-frontend-react"
@@ -29,6 +31,7 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj1mob',
       title: "IceCreamsCorner Web App",
+      techStack: ["Bootstrap", "JavaScript", "Django"],
       description: "Developed an online ice cream shop using Django. Features include user authentication, shopping cart with limits, order placement, and history. Responsive design ensures a seamless experience across devices.",
       demoLink: "https://anuj459.pythonanywhere.com/",
       codeLink: "https://github.com/Anuj579/IceCreamsCorner_webapp"
@@ -37,6 +40,7 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/v1743868758/melodift-laptop_unknmv.png',
       mobileImg: 'https://res.cloudinary.com/djsvc9dqf/image/upload/v1743868758/melodift-mobile_khmbnv.png',
       title: "Melodift",
+      techStack: ["Next.js", "Tailwind CSS", "FFmpeg"],
       description: "An online music converter that transforms any song into a relaxing lofi version. Upload your track to instantly generate chill lofi vibes, with download support and a smooth, responsive UI built using modern web technologies.",
       demoLink: "https://melodift.up.railway.app/",
       codeLink: "https://github.com/Anuj579/melodift"
@@ -45,6 +49,7 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj2mob',
       title: "Time Tracer Website",
+      techStack: ["HTML", "CSS", "JavaScript"],
       description: "A web app for tracking time, offering countdown and elapsed time functionalities. Input a target date to see the remaining or elapsed time, featuring a user-friendly interface and a responsive, modern design.",
       demoLink: "https://timetracer9.netlify.app/",
       codeLink: "https://github.com/Anuj579/TimeTracer"
@@ -53,6 +58,7 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/movieapp-laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/movieapp-mob',
       title: "Movie Search App",
+      techStack: ["Bootstrap", "JavaScript"],
       description: "A movie search application that lets users quickly find movies by title. Featuring responsive design, Bootstrap integration, and dynamic API-driven content with smooth loading states for a clean, user-friendly experience.",
       demoLink: "https://quickmoviesearch.netlify.app/",
       codeLink: "https://github.com/Anuj579/movie-search-app"
@@ -61,6 +67,7 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj3laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj3mob',
       title: "Tax Calculator",
+      techStack: ["Bootstrap", "JavaScript"],
       description: "A web app for calculating income after tax deductions. Input your gross income, extra income, and age group to get accurate results, displayed in INR. Includes user-friendly error handling and supports multiple tax rates.",
       demoLink: "https://taxcalculator99.netlify.app/",
       codeLink: "https://github.com/Anuj579/Tax-calculator"
@@ -69,6 +76,7 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj4laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj4mob',
       title: "Todo App",
+      techStack: ["React.js", "Tailwind CSS"],
       description: "An intuitive Todo application allowing easy theme switching between light and dark modes. It lets you add, edit, and delete tasks with the ability to manage multiple items simultaneously and clear selected tasks with a single click.",
       demoLink: "https://mytodoapp9.netlify.app/",
       codeLink: "https://github.com/Anuj579/ToDo-App-ReactJS"
@@ -77,6 +85,7 @@ function Portfolio() {
       laptopImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj6laptop',
       mobileImg: 'https://res.cloudinary.com/dn2xodesd/image/upload/f_auto,q_auto/proj6mob',
       title: "Responsive Design",
+      techStack: ["React.js", "Bootstrap"],
       description: "A sleek, responsive website built with React and Bootstrap. It showcases my frontend development skills with a clean, professional design and seamless responsiveness across all various devices and screen sizes.",
       demoLink: "https://responsivereactsite.netlify.app/",
       codeLink: "https://github.com/Anuj579/Responsive-react-site"
@@ -110,6 +119,7 @@ function Portfolio() {
                 laptopImg={project.laptopImg}
                 mobileImg={project.mobileImg}
                 title={project.title}
+                techStack={project.techStack}
                 description={project.description}
                 demoLink={project.demoLink}
                 codeLink={project.codeLink}
